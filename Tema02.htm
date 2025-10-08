@@ -1,0 +1,988 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta charset="UTF-8">
+
+
+<title>Nová stránka 1</title>
+</head>
+
+<body background="obr/1.jpg"  bgcolor="#E6E6E6">
+
+<table border="0" width="950" id="table1" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="5">
+		<p class="MsoNormal" align="left"><b>
+		<span style="font-size:18.0pt;font-family:&quot;Comic Sans MS&quot;;color:red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		Elektrické obvody a obvodové veličiny II</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="5">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="13%"><u>
+		<font face="Comic Sans MS" color="#0000FF" size="4">Obsah:</font></u></td>
+		<td nowrap width="86%" colspan="4"><font face="Comic Sans MS" size="4">
+		<a href="#1._Základní_zákony_a_principy_elektrotechniky">Základní zákony 
+		a principy elektrotechniky</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="3%">&nbsp;</td>
+		<td nowrap width="81%" colspan="3"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font>
+		<a href="#1.1._Kirchhoffovy_zákony"><font color="#800000">Kirchhoffovy 
+		zákony</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">&nbsp;</td>
+		<td nowrap width="77%" colspan="2"><font face="Comic Sans MS">- <i>
+		<a href="#První_Kirchhoffův_zákon"><font color="#000000">první 
+		Kirchhoffův zákon</font></a></i></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">&nbsp;</td>
+		<td nowrap width="77%" colspan="2"><font face="Comic Sans MS">- <i>
+		<a href="#Druhý_Kirchhoffův_zákon"><font color="#000000">druhý 
+		Kirchhoffův zákon</font></a></i></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="81%" colspan="3"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font>
+		<a href="#1.2._Ohmův_zákon"><font color="#800000">Ohmův zákon</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="81%" colspan="3"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font>
+		<a href="#1.3._Princip_ekvivalence"><font color="#800000">princip 
+		ekvivalence</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">&nbsp;</td>
+		<td nowrap width="78%" colspan="2"><font face="Comic Sans MS">-
+		<a href="#a)_lineární_rezistory_zapojené_v_sérii_(za_sebou)">
+		<font color="#000000">lineární rezistory zapojené v sérii (za sebou)</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">&nbsp;</td>
+		<td nowrap width="78%" colspan="2"><font face="Comic Sans MS">-
+		<a href="#b)_lineární_rezistory_zapojené_paralelně_(vedle_sebe)">
+		<font color="#000000">lineární rezistory zapojené paralelně (vedle sebe)</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">&nbsp;</td>
+		<td nowrap width="78%" colspan="2"><font face="Comic Sans MS">-
+		<a href="#c)_transfigurace_hvězda_-_trojúhelník"><font color="#000000">
+		transfigurace hvězda - trojúhelník</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">&nbsp;</td>
+		<td nowrap width="78%" colspan="2"><font face="Comic Sans MS">-
+		<a href="#d)_ekvivalence_napěťových_a_proudových_zdrojů">
+		<font color="#000000">ekvivalence napěťových a proudových zdrojů</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">&nbsp;</td>
+		<td nowrap width="78%" colspan="2"><font face="Comic Sans MS">-
+		<a href="#e)_ekvivalence_obvodů_s_lineárními_rezistory_a_zdroji_napětí__a_proudů">
+		<font color="#000000">ekvivalence obvodů s lineárními rezistory a zdroji 
+		napětí a proudů</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">&nbsp;</td>
+		<td nowrap width="78%" colspan="2"><font face="Comic Sans MS">-
+		<a href="#f)_ekvivalence_obvodů_s_nelineárními_rezistory">
+		<font color="#000000">ekvivalence obvodů s nelineárními rezistory</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="82%" colspan="3"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font>
+		<a href="#1.4._Princip_superpozice_(princip_nezávislého_působení)">
+		<font color="#800000">princip superpozice</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="82%" colspan="3"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font>
+		<a href="#1.5._Princip_reciprocity"><font color="#800000">princip 
+		reciprocity</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="82%" colspan="3"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font>
+		<a href="#1.6._Princip_duality"><font color="#800000">princip duality</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="82%" colspan="3"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font>
+		<a href="#1.7._Telegenova_věta"><font color="#800000">Telegenova věta</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="82%" colspan="3">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#1.8._Princip_kompenzace_(substituce)"><font color="#800000">
+		princip kompenzace</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">&nbsp;</td>
+		<td nowrap width="3%">&nbsp;</td>
+		<td nowrap width="75%">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0">&nbsp;</p>
+<table border="0" width="950" id="table3" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="4"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="1._Základní_zákony_a_principy_elektrotechniky">1. Základní zákony a 
+		principy elektrotechniky</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4" height="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4" height="24"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.1._Kirchhoffovy_zákony">1.1. Kirchhoffovy zákony</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4" height="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Comic Sans MS; color: fuchsia">
+		&nbsp;&nbsp; </span></b></td>
+		<td nowrap width="35%">
+		<img border="0" src="Tema02_Obr/Obr01.jpg" width="330" height="443"></td>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="55%" valign="top">
+		<p style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Byly 
+		formulovány <span style="background-color: #FFFF00">Gustavem Robertem 
+		Kirchhoffem</span> v roce <font color="#FF0000">1845</font></span></b></span></p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">(bylo 
+		mu 21 let), pozdějším profesorem teoretické fyziky na</span></b></span></p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		univerzitě v Heidelbergu.</span></b></span></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" style="font-size: 13pt">Kirchhoffovy zákony (<font color="#FF0000">K.z.</font>) 
+		patří k základním pilířům teoretické</font></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" style="font-size: 13pt">elektrotechniky (teorie 
+		obvodů).</font></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" style="font-size: 13pt"><font color="#FF0000">
+		<span style="background-color: #FFFF00">Zákony mají všeobecnou platnost</span></font>, 
+		platí pro všechny typy</font></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" style="font-size: 13pt">elektrických a elektronických 
+		obvodů.</font></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" style="font-size: 13pt">Kirchoffovy zákony lze 
+		odvodit jistým zjednodušením</font></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" style="font-size: 13pt">z Maxwellových rovnic (ze 
+		zákona o elektromagnetické indukci</font></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" style="font-size: 13pt">a ze zákona o zachování 
+		elektrického náboje).</font></b><p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">
+		<b><font face="Arial" style="font-size: 13pt; font-style: italic">
+		<a target="_blank" href="http://cs.wikipedia.org/">
+		http://cs.wikipedia.org/</a></font></b><p style="margin-top: 0; margin-bottom: 0">
+		<b><i><font face="Arial" style="font-size: 13pt">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Kirchhoffovy_zákony">
+		http://cs.wikipedia.org/wiki/Kirchhoffovy_zákony</a></font></i></b><p style="margin-top: 0; margin-bottom: 0">
+		<b><font face="Arial" style="font-size: 13pt; font-style: italic">
+		<a target="_blank" href="http://en.wikipedia.org/wiki/Gustav_Kirchhoff">http://en.wikipedia.org/wiki/Gustav_Kirchhoff</a></font></b><p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 3px">&nbsp;</p>
+<table border="0" width="950" id="table11" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="13%">
+		<span style="font-size: 13pt; color: #FF00FF"><b>
+		<span style="font-family: Comic Sans MS; text-decoration: underline">
+		<a name="První_Kirchhoffův_zákon">První Kirchhoffův zákon</a></span></b></span></td>
+		<td nowrap width="49%"><b>
+		<span style="font-size:13.0pt;font-family:Arial">- <font color="#FF0000">
+		<span style="background-color: #FFFF00">algebraický součet proudů v 
+		libovolném uzlu obvodu je roven nule</span></font>,</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="49%"><b>
+		<span style="font-size:13.0pt;font-family:Arial">jinak napsáno: součet 
+		okamžitých hodnot proudů do uzlu vtékajících je roven součtu</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="15%">&nbsp;</td>
+		<td nowrap width="49%"><b>
+		<span style="font-size:13.0pt;font-family:Arial">okamžitých 
+		hodnot proudů z uzlu vytékajících.</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="49%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="49%">
+		<img border="0" src="Tema02_Obr/Obr02.jpg" width="587" height="238"></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="49%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="13%"><a name="Druhý_Kirchhoffův_zákon">
+		<span style="font-size: 13pt; color: #FF00FF; text-decoration: underline">
+		<b><span style="font-family: Comic Sans MS">Druhý</span></b></span><b><span style="font-family: Comic Sans MS; text-decoration: underline"><span style="font-size: 13pt; color: #FF00FF">
+		Kirchhoffův zákon</span></span></b></a></td>
+		<td nowrap width="49%"><b>
+		<span style="font-size:13.0pt;font-family:Arial">- <font color="#FF0000">
+		<span style="background-color: #FFFF00">algebraický součet napětí v 
+		uzavřené smyčce obvodu je roven nule</span></font>,</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="49%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="49%">
+		<img border="0" src="Tema02_Obr/Obr03.jpg" width="717" height="300"></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 3px">&nbsp;</p>
+<table border="0" width="950" id="table4" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="940" colspan="4"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.2._Ohmův_zákon">1.2. Ohmův zákon</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="940" colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="35%">
+		<img border="0" src="Tema02_Obr/Obr04.jpg" width="328" height="461"></td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="55%" valign="top">
+		<p style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Byl 
+		formulován <span style="background-color: #FFFF00">Georgem Simonem Ohmem</span> 
+		v roce <font color="#FF0000">18</font></span></b></span><font color="#FF0000"><span style="font-size: 13pt"><b><span style="font-family: Arial">25</span></b></span></font></p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">(bylo 
+		mu 36 let), pozdějším rektorem polytechniky v Berlíně.</span></b></span></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" style="font-size: 13pt">Spolu s Kirchhoffovými zákony 
+		tvoří jádro teorie obvodů.</font></b><p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">
+		<b><font face="Arial" style="font-size: 13pt">Simon Ohm objevil tento 
+		zákon při měření proudů a napětí</font></b><p style="margin-top: 0; margin-bottom: 0">
+		<b><font face="Arial" style="font-size: 13pt">na drátových vodičích</font></b><p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">
+		<img border="0" src="Tema02_Obr/Obr05.jpg" width="421" height="221"><p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;<p style="margin-top: 0; margin-bottom: 0">
+		<font face="Arial" color="#CC3300">
+		<span style="font-size: 13pt; font-style: italic; font-weight: 700">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Ohm">http://cs.wikipedia.org/wiki/Ohm</a></span></font><p style="margin-top: 0; margin-bottom: 0">
+		<i>
+		<font face="Arial" style="font-size: 13pt; font-weight: 700" color="#CC3300">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Georg_Simon_Ohm">http://cs.wikipedia.org/wiki/Georg_Simon_Ohm</a></font></i><p style="margin-top: 0; margin-bottom: 0">
+		<b><i><font face="Arial" style="font-size: 13pt" color="#CC3300">
+		<a target="_blank" href="http://en.wikipedia.org/wiki/Georg_Ohm">http://en.wikipedia.org/wiki/Georg_Ohm</a></font></i></b></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 3px">&nbsp;</p>
+<table border="0" width="950" id="table12" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="80%" colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.3._Princip_ekvivalence">1.3. Princip ekvivalence</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="80%" colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="95%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">
+		<span style="background-color: #FFFF00">Dva elektrické obvody jsou 
+		ekvivalentní, jestliže jejich vnější napěťové a proudové poměry jsou 
+		shodné</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="95%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Takové obvody můžeme vzájemně zaměnit a 
+		jejich &quot;okolí nic nepozná&quot;.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="95%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="95%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Princip je nejčastěji využíván ke 
+		zjednodušování obvodů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="95%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="95%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial"><font color="#FF0000">
+		<span style="background-color: #FFFF00">Princip ekvivalence platí (lze 
+		využít) ve všech typech obvodů</span></font>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="95%">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 3px">&nbsp;</p>
+<table border="0" width="950" id="table13" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="95%"><font face="Comic Sans MS" color="#0000FF">
+		<a name="a)_lineární_rezistory_zapojené_v_sérii_(za_sebou)">a) lineární rezistory zapojené v sérii 
+		(za sebou)</a></font></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table14" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">
+		<img border="0" src="Tema02_Obr/Obr06.jpg" width="567" height="171"></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Při odvození vycházíme z
+		<font color="#FF0000">II. K.z</font>. Zapíšeme <font color="#FF0000">II. 
+		K.z.</font> pro smyčku <font color="#FF0000">S</font>, využijeme 
+		znalosti Ohmova zákona (<font color="#FF0000">O.z.</font>)</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">a provedeme porovnání.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">
+		<img border="0" src="Tema02_Obr/Obr07.jpg" width="470" height="289"></td>
+		<td nowrap width="40%" valign="top">
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		<font color="#FF0000" size="4"><b><span style="font-family: Arial">&nbsp;
+		</span><span style="font-family: Arial; background-color: #FFFF00">
+		Celkový odpor sériově zapojených</span></b></font></p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		<font color="#FF0000" size="4"><b><span style="font-family: Arial">&nbsp;
+		</span><span style="font-family: Arial; background-color: #FFFF00">
+		rezistorů je roven součtu odporů dílčích</span></b></font></p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		<font color="#FF0000" size="4"><b><span style="font-family: Arial">&nbsp;
+		</span><span style="font-family: Arial; background-color: #FFFF00">
+		rezistorů.</span></b></font><p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;<p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;<p style="margin-top: 0; margin-bottom: 0">
+		<b><font face="Arial" color="#0000FF" style="font-size: 13pt">&nbsp;
+		</font>
+		<font face="Arial" color="#0000FF" style="font-size: 13pt; text-decoration: underline; font-style:italic">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Rezistor">
+		http://cs.wikipedia.org/wiki/Rezistor</a></font></b></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table16" style="border-collapse: collapse">
+	<tr>
+		<td width="5%">&nbsp;</td>
+		<td width="95%"><font face="Comic Sans MS" color="#0000FF">
+		<a name="b)_lineární_rezistory_zapojené_paralelně_(vedle_sebe)">b) lineární rezistory zapojené paralelně 
+		(vedle sebe)</a></font></td>
+	</tr>
+</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table15" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">
+		<img border="0" src="Tema02_Obr/Obr08.jpg" width="470" height="361"></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Při odvození vycházíme z
+		<font color="#FF0000">I. K.z</font>. Zapíšeme <font color="#FF0000">I. 
+		K.z.</font> pro uzel </span>
+		<span style="font-family: Wingdings" lang="en"></span><span style="font-family: Arial"> 
+		, využijeme znalosti Ohmova zákona (<font color="#FF0000">O.z.</font>)</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">a provedeme porovnání.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">
+		<img border="0" src="Tema02_Obr/Obr09.jpg" width="468" height="356"></td>
+		<td nowrap width="40%" valign="top">
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		<font size="4" color="#FF0000"><b><span style="font-family: Arial">&nbsp;
+		</span><span style="font-family: Arial; background-color: #FFFF00">
+		Celková vodivost paralelně zapojených</span></b></font></p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		<font color="#FF0000" size="4"><b><span style="font-family: Arial">&nbsp;
+		</span><span style="font-family: Arial; background-color: #FFFF00">
+		rezistorů je roven součtu vodivostí dílčích</span></b></font></p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		<font color="#FF0000" size="4"><b><span style="font-family: Arial">&nbsp;
+		</span><span style="font-family: Arial; background-color: #FFFF00">
+		rezistorů.</span></b></font></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" color="#0000FF" style="font-size: 13pt">&nbsp; 
+		Vodivost <span style="background-color: #FFFF00">G</span> je převrácená 
+		hodnota odporu R</font></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" color="#0000FF" style="font-size: 13pt">&nbsp; v 
+		jednotkách Siemens <span lang="en-us" style="background-color: #FFFF00">
+		[S]</span>.</font></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" color="#0000FF">&nbsp;&nbsp;
+		<i>
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Elektrický_odpor">
+		http://cs.wikipedia.org/wiki/Elektrický_odpor</a></i></font></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><i><b>
+		<font face="Arial" color="#0000FF">&nbsp;&nbsp;
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Elektrická_vodivost">
+		http://cs.wikipedia.org/wiki/Elektrická_vodivost</a></font></b></i></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table17" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="95%"><font face="Comic Sans MS" color="#0000FF">
+		<a name="c)_transfigurace_hvězda_-_trojúhelník">c) 
+		transfigurace hvězda&nbsp;- 
+		trojúhelník</a></font></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table18" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">
+		<span style="background-color: #FFFF00">Jedná se o ekvivalenci 
+		odporových trojpólů</span>. Rezistory nejsou zapojeny ani sériově, ani 
+		paralelně.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">
+		<img border="0" src="Tema02_Obr/Obr10.jpg" width="610" height="267"></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Na základě rovnosti odporů mezi 
+		stejnými dvojicemi uzlů lze odvodit transformační vztahy mezi odpory,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">resp. vodivostmi.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">
+		<img border="0" src="Tema02_Obr/Obr11.jpg" width="555" height="272"></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Analogicky lze odvodit vztahy i pro 
+		odporové vícepóly.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table19" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="95%"><font face="Comic Sans MS" color="#0000FF">
+		<a name="d)_ekvivalence_napěťových_a_proudových_zdrojů">d) 
+		ekvivalence napěťových a proudových zdrojů</a></font></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table20" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">
+		<img border="0" src="Tema02_Obr/Obr12.jpg" width="498" height="348"><b><i><font color="#0000FF" face="Arial">&nbsp;&nbsp;&nbsp;
+		<u>
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Elektrický_zdroj">
+		http://cs.wikipedia.org/wiki/Elektrický_zdroj</a></u></font></i></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table21" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="94%"><font face="Comic Sans MS" color="#0000FF">
+		<a name="e)_ekvivalence_obvodů_s_lineárními_rezistory_a_zdroji_napětí__a_proudů">e) 
+		ekvivalence obvodů s lineárními rezistory a zdroji napětí&nbsp; a 
+		proudů</a></font></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table22" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Ekvivalencí zde rozumíme grafickou 
+		konstrukci výsledné ampérvoltové charakteristiky z dílčích</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">charakteristik rezistoru a zdroje.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">
+		<img border="0" src="Tema02_Obr/Obr13.jpg" width="541" height="484"></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table23" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="95%"><font face="Comic Sans MS" color="#0000FF">
+		<a name="f)_ekvivalence_obvodů_s_nelineárními_rezistory">f) 
+		ekvivalence obvodů s nelineárními rezistory</a></font></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table24" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Ekvivalencí zde rozumíme grafickou 
+		konstrukci výsledné ampérvoltové charakteristiky z dílčích</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">charakteristik nelineárních rezistorů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">
+		<img border="0" src="Tema02_Obr/Obr14.jpg" width="536" height="484"></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table25" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="100%" colspan="4"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.4._Princip_superpozice_(princip_nezávislého_působení)">1.4. Princip superpozice (princip nezávislého působení)</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="100%" colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="35%">
+		<img border="0" src="Tema02_Obr/Obr15.jpg" width="327" height="382"></td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="55%" valign="top">
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; background-color: #FFFF00">
+		Následek, vyvolaný současným působením několika příčin,</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; background-color: #FFFF00">
+		je roven součtu následků, vyvolaných každou příčinou zvlášť.</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial">V&nbsp;el. obvodech to 
+		znamená, že <u>obsahuje-li obvod více nezávislých</u></span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial"><u>zdrojů</u>, pak 
+		výpočet libovolné obvodové veličiny (napětí, proud)</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial">lze provést jako 
+		součet těchto veličin při působení každého zdroje</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial">zvlášť.</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial">Metoda je tedy 
+		vhodná k&nbsp;<u>analýze obvodů s&nbsp;více nezávislými zdroji</u>.</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0"><b><u>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #FF0000; background-color: #FFFF00">
+		Princip platí jen v&nbsp;lineárních obvodech.</span></u><span style="font-size: 13.0pt; font-family: Arial"> 
+		Platí zde přímá úměra mezi</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		příčinou (zdroje) a následkem (napětí, proudy).</span></b></span><p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;<p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;<p style="margin-top: 0; margin-bottom: 0">
+		<font face="Arial" style="font-weight: 700; font-style: italic">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Hermann_Ludwig_Ferdinand_von_Helmholtz">http://cs.wikipedia.org/wiki/Hermann_Ludwig_Ferdinand_von_Helmholtz</a></font><p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="100%" colspan="4">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table27" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table26" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="100%" colspan="3"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.5._Princip_reciprocity">1.5. Princip reciprocity</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Jde o princip,
+		<span style="background-color: #FFFF00">platný jen pro některé druhy 
+		lineárních obvodů</span>. Elektrický obvod je reciprocitní, jestliže</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">podle obrázku současně platí:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">
+		<img border="0" src="Tema02_Obr/Obr16.jpg" width="729" height="497"></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">
+		<span style="background-color: #FFFF00">Princip reciprocity souvisí s 
+		přenosem energie v obou směrech</span>. Pokud nějaký prvek či obvod 
+		preferuje</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">tok energie jedním směrem, např. 
+		lineární zesilovač, pak není reciprocitní.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Lze dokázat, že
+		<span style="background-color: #FFFF00">všechny pasivní obvody jsou 
+		reciprocitní</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><font color="#FF0000">
+		<span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00">Princip 
+		reciprocity platí jen v některých obvodech.</span></b></span></font></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table28" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="100%" colspan="3"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.6._Princip_duality">1.6. Princip duality</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Dva elektrické obvody jsou duální, 
+		jsou-li popsány formálně stejným typem rovnic, jež se mohou lišit</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">fyzikálním významem. Dualita je dvojího 
+		typu a to topologická a fyzikální.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00">Např. I. a 
+		II. K.z. (fyzikální dualita)</span></b></span></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table29" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="100%" colspan="3"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.7._Telegenova_věta">1.7. Telegenova věta</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">
+		<img border="0" src="Tema02_Obr/Obr17.jpg" width="776" height="277"></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><font color="#FF0000">
+		<span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00">Věta 
+		(princip) platí pro všechny typy obvodů.</span></b></span></font></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table30" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="100%" colspan="3"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.8._Princip_kompenzace_(substituce)">1.8. Princip kompenzace (substituce)</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><b>
+		<span style="font-size: 13.0pt; font-family: Arial">Nechť k-tá větev 
+		obvodu obsahuje pasivní prvek s&nbsp;napětím <span style="color:
+blue">u<sub>k </sub></span>a proudem<span style="color:red"> i<sub>k</sub></span>. 
+		Napětí a proudy ve všech</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><b>
+		<span style="font-size: 13.0pt; font-family: Arial">zbývajících větvích 
+		obvodu se nezmění, nahradíme-li pasivní prvek k-té větve buď zdrojem 
+		napětí </span>
+		<span lang="EN-US" style="font-size: 13.0pt; font-family: Arial; color: blue">
+		U<sub>0k</sub>=</span><span style="font-size: 13.0pt; font-family: Arial; color: blue">u<sub>k</sub></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><b>
+		<span style="font-size: 13.0pt; font-family: Arial">nebo zdrojem proudu
+		</span>
+		<span style="font-size: 13.0pt; font-family: Times New Roman; color: red">
+		I</span><sub><span style="font-family: Arial; font-size: 13pt; color: #FF0000">0k</span></sub><span style="font-size: 13.0pt; font-family: Arial; color: red">=i<sub>k</sub></span><span style="font-size: 13.0pt; font-family: Arial">.</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2">
+		<img border="0" src="Tema02_Obr/Obr18.jpg" width="634" height="255"></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="50%">&nbsp;</td>
+		<td nowrap width="40%" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%" colspan="2"><font color="#FF0000">
+		<span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00">Věta 
+		(princip) platí pro všechny typy obvodů.</span></b></span></font></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 3px">&nbsp;</p>
+
+</body>
+
+</html>

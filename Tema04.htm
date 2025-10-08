@@ -1,0 +1,556 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta charset="UTF-8">
+
+
+<title>Nová stránka 1</title>
+</head>
+
+<body background="obr/1.jpg"  bgcolor="#E6E6E6">
+
+<table border="0" width="950" id="table1" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="3">
+		<p class="MsoNormal" align="left"><b>
+		<span style="font-size:18.0pt;font-family:&quot;Comic Sans MS&quot;;color:red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		Analýza lineárních odporových obvodů</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="13%"><u>
+		<font face="Comic Sans MS" color="#0000FF" size="4">Obsah:</font></u></td>
+		<td nowrap width="86%" colspan="2">
+		<font face="Comic Sans MS" size="4">
+		<a href="#1._Rozdělení_metod_analýzy">Rozdělení metod analýzy</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="86%" colspan="2">
+		<font face="Comic Sans MS" size="4">
+		<a href="#2._Příklad_heuristické_analýzy">Příklad heuristické analýzy</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="86%" colspan="2">
+		<font face="Comic Sans MS" size="4">
+		<a href="#3._Algoritmické_(obecné)_metody_analýzy">Algoritmické (obecné) 
+		metody analýzy </a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="3%">&nbsp;</td>
+		<td nowrap width="81%"><font face="Comic Sans MS">
+		<font color="#800000">
+		<a href="#3.1._Metoda_smyčkových_proudů_(MSP)" style="text-decoration: none">
+		<font color="#800000">-
+		</font></a>
+		</font>
+		<a href="#3.1._Metoda_smyčkových_proudů_(MSP)"><font color="#800000">
+		metoda smyčkových proudů</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="81%"><font face="Comic Sans MS">
+		<font color="#800000">
+		<a href="#3.2._Metoda_uzlových_napětí_(MUN)" style="text-decoration: none">
+		<font color="#800000">-
+		</font></a>
+		</font>
+		<a href="#3.2._Metoda_uzlových_napětí_(MUN)"><font color="#800000">
+		metoda uzlových napětí</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="86%" colspan="2"><font face="Comic Sans MS" size="4">
+		<a href="#Přílohy">Přílohy</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="81%"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font></font><a href="#Stručné_obecné_počtení_o_analýze.">
+		<font face="Comic Sans MS" color="#800000">stručné obecné počtení o 
+		analýze</font></a></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="81%"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font>
+		<a href="#Programy_pro_analýzu_elektrických_obvodů_zdarma_ke_stažení">
+		<font color="#800000">programy pro analýzu elektrických obvodů zdarma ke 
+		stažení</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="81%"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font>
+		<a href="#Tipy_na_zajímavé_publikace"><font color="#800000">tipy na 
+		zajímavé publikace</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="81%"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font>
+		<a href="#Příklad_analýzy_programem_SNAP"><font color="#800000">
+		<a href="#Příklad_simulace_programem_SNAP_"><font color="#800000">
+		příklad simulace programem SNAP</font></a></font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="81%"><font face="Comic Sans MS">
+		<font color="#800000">-
+		</font><a href="#Příklad_simulace_programem_Micro-Cap_">
+		<font color="#800000">příklad simulace programem Micro-Cap</font></a></font></td>
+	</tr>
+	</table>
+<p>&nbsp;</p>
+<table border="0" width="950" id="table3" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="1._Rozdělení_metod_analýzy">1. Rozdělení metod analýzy</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="2" height="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%">
+		<img border="0" src="Tema04_Obr/Obr01.jpg" width="662" height="337"></td>
+	</tr>
+	<tr>
+		<td nowrap width="9%">&nbsp;</td>
+		<td nowrap width="90%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="99%" colspan="2"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="2._Příklad_heuristické_analýzy">2. Příklad heuristické analýzy</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="9%">&nbsp;</td>
+		<td nowrap width="90%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr02.jpg" width="424" height="250"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr03.jpg" width="687" height="254"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr04.jpg" width="687" height="648"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table11" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="3._Algoritmické_(obecné)_metody_analýzy">3. Algoritmické (obecné) metody analýzy</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="2" height="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0" align="left">
+		<b><span style="font-size:13.0pt;font-family:Arial">Umožňují řešit téměř 
+		libovolný lineární odporový obvod. Matematický model (soustava 
+		lineárních</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0" align="left">
+		<b><span style="font-size:13.0pt;font-family:Arial">algebraických 
+		rovnic) je sestavena s&nbsp;použitím univerzálního algoritmu.</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="90%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="99%" colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="3.1._Metoda_smyčkových_proudů_(MSP)">3.1. Metoda smyčkových proudů (MSP)</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="9%">&nbsp;</td>
+		<td nowrap width="90%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">Je založena na
+		<span style="background-color: #FFFF00">II. Kirchhoffově zákonu</span> 
+		(o napětí v&nbsp;uzavřené smyčce).</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">V&nbsp;el. obvodu musejí být 
+		jako zdroje <span style="background-color: #FFFF00">jen zdroje napětí</span>.
+		</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr05.jpg" width="660" height="686"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr06.jpg" width="665" height="314"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr07.jpg" width="678" height="596"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr08.jpg" width="670" height="331"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr09.jpg" width="684" height="459"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr10.jpg" width="684" height="617"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr12.jpg" width="607" height="310"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr13.jpg" width="634" height="176"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="3.2._Metoda_uzlových_napětí_(MUN)">3.2. Metoda uzlových napětí (MUN)</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">Je založena na
+		<span style="background-color: #FFFF00">I. Kirchhoffově zákonu</span> (o 
+		proudech v uzlech).</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">V&nbsp;el. obvodu musejí být 
+		jako zdroje <span style="background-color: #FFFF00">jen zdroje proudu</span>.
+		</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr14.jpg" width="705" height="545"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr15.jpg" width="615" height="645"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr16.jpg" width="634" height="372"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr17.jpg" width="668" height="503"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr18.jpg" width="628" height="485"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>
+		<img border="0" src="Tema04_Obr/Obr19.jpg" width="653" height="278"></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap valign="top"><u>
+		<font face="Comic Sans MS" color="#FF00FF" style="font-size: 13pt; font-weight: 700">
+		Závěr</font></u></td>
+		<td nowrap>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<font color="#FF0000"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; background-color: #FFFF00">
+		Obě metody, MSP i MUN, jsou rovnocenné. Přesto je MUN při reálných
+		</span></b></font></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<font color="#FF0000"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; background-color: #FFFF00">
+		výpočtech používána častěji z&nbsp;důvodů, jež přesahují rámec předmětu.</span></b></font></td>
+	</tr>
+	<tr>
+		<td nowrap>&nbsp;</td>
+		<td nowrap>&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 3px">&nbsp;</p>
+<p style="margin-top: 0; margin-bottom: 1px">&nbsp;</p>
+<table border="0" width="950" id="table10" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4"><span style="font-size: 16pt; color: #0000FF"><b>
+		<span style="font-family: Comic Sans MS"><a name="Přílohy">Přílohy</a></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="75">&nbsp;</td>
+		<td nowrap colspan="3"><b><font face="Arial" color="#800000">
+		<a name="Stručné_obecné_počtení_o_analýze.">Stručné 
+		obecné počtení o analýze.</a></font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="75">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap colspan="2">
+		<b><i><font face="Arial" style="font-size: 13pt"><font color="#0000FF">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Analýza">
+		http://cs.wikipedia.org/wiki/Analýza</a></font> </font></i></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="75">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="75">&nbsp;</td>
+		<td nowrap colspan="3"><b><font face="Arial" color="#800000">
+		<a name="Programy_pro_analýzu_elektrických_obvodů_zdarma_ke_stažení">Programy 
+		pro analýzu elektrických obvodů zdarma ke stažení</a> </font>
+		<font face="Arial" color="#FF0000">
+		<span style="background-color: #FFFF00">(doporučujeme)</span></font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap width="354"><i>
+		<font face="Arial" color="#0000FF" style="font-size: 13pt; font-weight: 700; text-decoration: underline">
+		<a target="_blank" href="http://snap.webpark.cz/index.html">
+		http://snap.webpark.cz/index.html</a></font></i></td>
+		<td nowrap width="517"><b><font face="Arial">- program umí symbolickou i 
+		numerickou analýzu lin. obvodů</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap width="354">
+		<font color="#0000FF" face="Arial" style="font-size: 13pt; font-weight: 700; font-style: italic; text-decoration: underline">
+		<a target="_blank" href="http://www.spectrum-soft.com/index.shtm">
+		http://www.spectrum-soft.com/index.shtm</a></font></td>
+		<td nowrap width="517"><b><font face="Arial">- profesionální program pro 
+		všechny typy obvodů, zdarma lze</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap width="354">&nbsp;</td>
+		<td nowrap width="517"><b><font face="Arial">&nbsp; stáhnout tzv. 
+		&quot;student&quot; verzi, jež je omezena počtem rovnic</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap width="354">&nbsp;</td>
+		<td nowrap width="517">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap colspan="3"><b><font face="Arial" color="#800000">
+		<a name="Tipy_na_zajímavé_publikace">Tipy na 
+		zajímavé publikace</a></font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap width="354"><u><i><b>
+		<font color="#0000FF" face="Arial" style="font-size: 13pt">
+		<a target="_blank" href="http://shop.ben.cz/cz/121177-resime-elektronicke-obvody.aspx">
+		http://www.shop.ben.cz/cz/121177-resime-elektronicke-obvody.aspx</a></font></b></i></u></td>
+		<td nowrap width="517">
+		<p style="margin-top: 0; margin-bottom: 0"><b><font face="Arial">- 
+		objemná monografie, zabývající se analýzou obvodů z mnoha</font></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp; <b><font face="Arial">
+		pohledů, obsahuje mnoho příkladů a navíc i prakticky využitelné&nbsp;
+		</font></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b><font face="Arial">&nbsp; 
+		návody na programy <font color="#FF0000">SNAP</font> a
+		<font color="#FF0000">Micro-Cap</font></font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap width="354">&nbsp;</td>
+		<td nowrap width="517">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="934" colspan="3"><b>
+		<font face="Arial" color="#800000">
+		<a name="Příklad_simulace_programem_SNAP_">Příklad simulace programem SNAP</a></font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap colspan="2" width="871">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap colspan="2" width="871">
+		<img border="0" src="Tema04_Obr/Obr20.jpg" width="871" height="692"></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap colspan="2" width="871">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="934" colspan="3"><b>
+		<font face="Arial" color="#800000">
+		<a name="Příklad_simulace_programem_Micro-Cap_">Příklad simulace programem Micro-Cap</a></font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap colspan="2" width="871">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="75">&nbsp;</td>
+		<td nowrap width="63">&nbsp;</td>
+		<td nowrap colspan="2">
+		<img border="0" src="Tema04_Obr/Obr22.jpg" width="530" height="618"></td>
+	</tr>
+	</table>
+
+</body>
+
+</html>

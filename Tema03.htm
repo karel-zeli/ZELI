@@ -1,0 +1,661 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta charset="UTF-8">
+
+
+<title>Nová stránka 1</title>
+</head>
+
+<body background="obr/1.jpg"  bgcolor="#E6E6E6">
+
+<table border="0" width="950" id="table1" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="4">
+		<p class="MsoNormal" align="center"><b>
+		<span style="font-size:18.0pt;font-family:&quot;Comic Sans MS&quot;;color:red">
+		Lineární odporové obvody</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="13%"><u>
+		<font face="Comic Sans MS" color="#0000FF" size="4">Obsah:</font></u></td>
+		<td nowrap width="86%" colspan="3"><font face="Comic Sans MS" size="4">
+		<a href="#1._Théveninova__a_Nortonova_věta">Théveninova a Nortonova věta</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="3%">&nbsp;</td>
+		<td nowrap width="81%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#1.1._Théveninova_věta"><font color="#800000">Théveninova věta</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="3%">&nbsp;</td>
+		<td nowrap width="81%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#1.2._Nortonova_věta"><font color="#800000">Nortonova věta</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="86%" colspan="3"><font face="Comic Sans MS" size="4">
+		<a href="#2._Reálný_zdroj_elektrické_energie">Reálný zdroj elektrické 
+		energie</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="81%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#Určení_parametrů_náhradního_obvodu_(Uo,_Ri)">
+		<font color="#800000">určení parametrů náhradního obvodu</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="86%" colspan="3"><font face="Comic Sans MS" size="4">
+		<a href="#3._Přenos_výkonu_ze_zdroje_do_spotřebiče">Přenos výkonu ze 
+		zdroje do spotřebiče</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="86%" colspan="3"><font face="Comic Sans MS" size="4">
+		<a href="#4._Děliče_napětí_a_proudů">Děliče napětí a proudů</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="86%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#4.1._Děliče_napětí"><font color="#800000">děliče napětí</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">&nbsp;</td>
+		<td nowrap width="78%"><font face="Comic Sans MS">-
+		<font color="#000000"><a href="#4.1.1._Nezatížené_děliče_napětí">
+		<font color="#000000">nezatížené děliče napětí</font></a></font></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">&nbsp;</td>
+		<td nowrap width="78%"><font face="Comic Sans MS">-
+		<font color="#000000"><a href="#4.1.2._Zatížené_děliče_napětí">
+		<font color="#000000">zatížené děliče napětí</font></a></font></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="82%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#4.2._Děliče_proudu"><font color="#800000">děliče proudu</font></a></font></td>
+	</tr>
+	</table>
+<p style="margin-top: 0">&nbsp;</p>
+<table border="0" width="950" id="table3" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="4"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="1._Théveninova__a_Nortonova_věta">1. Théveninova&nbsp; a Nortonova věta</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4" height="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4" height="24"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.1._Théveninova_věta">1.1. Théveninova věta</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4" height="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Comic Sans MS; color: fuchsia">
+		&nbsp;&nbsp; </span></b></td>
+		<td nowrap width="30%">
+		<img border="0" src="Tema03_Obr/Obr01.jpg" width="304" height="450"></td>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="60%" valign="top">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">Vyjádřil ji L.Ch.Thévenin 
+		v&nbsp;roce 1883 a to bez matematického</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">důkazu. Ve skutečnosti 
+		je autorem H. Helmholtz, jenž větu</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">formuloval cca o 30 let 
+		dříve.</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: blue; background-color: #FFFF00">
+		Libovolný lineární odporový el. obvod lze ke dvěma zvoleným</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: blue; background-color: #FFFF00">
+		svorkám nahradit náhradním obvodem, složeným</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: blue; background-color: #FFFF00">
+		z <u>ideálního zdroje napětí v&nbsp;sérii s&nbsp;vnitřním odporem</u>.</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">(prozatím uvažujeme 
+		pouze odporové obvody a stejnosměrné</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">budicí zdroje).</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">
+		<b><i><font face="Arial" style="font-size: 13pt">
+		<a target="_blank" href="http://en.wikipedia.org/wiki/Thévenin">
+		http://en.wikipedia.org/wiki/Thévenin</a></font></i></b><p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table31" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="10%">
+		&nbsp;</td>
+		<td nowrap width="90%">
+		<img border="0" src="Tema03_Obr/Obr02.jpg" width="763" height="385"></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table4" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="940" colspan="4"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.2._Nortonova_věta">1.2. </a> </span></b><span style="font-size: 14pt; color: #800000"><b>
+		<span style="font-family: Comic Sans MS"><a name="1.2._Nortonova_věta">Nortonova věta</a></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="940" colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">&nbsp;</td>
+		<td nowrap width="95%" colspan="3">
+		<img border="0" src="Tema03_Obr/Obr03.jpg" width="756" height="438"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="35%">
+		&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="55%" valign="top">
+		<font face="Arial" color="#CC3300">
+		<span style="font-size: 13pt; font-style: italic; font-weight: 700">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Siemens_AG">
+		http://cs.wikipedia.org/wiki/Siemens_AG</a></span></font></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 3px">&nbsp;</p>
+<table border="0" width="950" id="table32" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="4"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="2._Reálný_zdroj_elektrické_energie">2. Reálný zdroj elektrické energie</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4" height="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Comic Sans MS; color: fuchsia">
+		&nbsp;&nbsp; </span></b></td>
+		<td nowrap width="90%" colspan="3">
+		<p style="margin-top: 0; margin-bottom: 0">
+		<img border="0" src="Tema03_Obr/Obr04.jpg" width="738" height="455"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="60%" valign="top">
+		<p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table33" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="95%">
+		<b>
+		<span style="font-size: 13.0pt; font-family: Comic Sans MS; color: fuchsia">
+		<u><a name="Určení_parametrů_náhradního_obvodu_(Uo,_Ri)">Určení parametrů náhradního obvodu</a></u><a name="Určení_parametrů_náhradního_obvodu_(Uo,_Ri)">
+		</a> </span>
+		<span style="font-size: 13.0pt; font-family: Comic Sans MS">
+		<a name="Určení_parametrů_náhradního_obvodu_(Uo,_Ri)">(Uo, Ri)</a></span></b></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table34" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="10%">
+		&nbsp;</td>
+		<td nowrap width="90%">
+		<img border="0" src="Tema03_Obr/Obr05.jpg" width="704" height="294"></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">
+		&nbsp;</td>
+		<td nowrap width="90%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">
+		&nbsp;</td>
+		<td nowrap width="90%">
+		<img border="0" src="Tema03_Obr/Obr06.jpg" width="717" height="715"></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">
+		&nbsp;</td>
+		<td nowrap width="90%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">
+		&nbsp;</td>
+		<td nowrap width="90%" valign="top">
+		<p style="margin-top: 0; margin-bottom: 0">
+		<img border="0" src="Tema03_Obr/Obr07.jpg" width="368" height="273">
+		<img border="0" src="Tema03_Obr/Obr07a.jpg" width="341" height="273"> </td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 3px">&nbsp;</p>
+<table border="0" width="950" id="table35" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="3._Přenos_výkonu_ze_zdroje_do_spotřebiče">3. Přenos výkonu ze zdroje do spotřebiče</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="2" height="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Comic Sans MS; color: fuchsia">
+		&nbsp;&nbsp; </span></b></td>
+		<td nowrap width="90%">
+		<p style="margin-top: 0; margin-bottom: 0">
+		<img border="0" src="Tema03_Obr/Obr08.jpg" width="758" height="347"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		<img border="0" src="Tema03_Obr/Obr09.jpg" width="787" height="399"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		<img border="0" src="Tema03_Obr/Obr10.jpg" width="757" height="808"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		<img border="0" src="Tema03_Obr/Obr11.jpg" width="728" height="262"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		<img border="0" src="Tema03_Obr/Obr12.jpg" width="763" height="590"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		<font face="Arial"><i><b><span style="font-size: 13pt">
+		<img border="0" src="Tema03_Obr/Obr13a.jpg" width="272" height="203">&nbsp;
+		<img border="0" src="Tema03_Obr/Obr13b.jpg" width="269" height="203">&nbsp;&nbsp;
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Wattmetr">
+		http://cs.wikipedia.org/wiki/Wattmetr</a></span></b></i></font></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 3px">&nbsp;</p>
+<table border="0" width="950" id="table36" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><span style="font-size: 16pt; color: #0000FF">
+		<a name="4._Děliče_napětí_a_proudů"><b>
+		<span style="font-family: Comic Sans MS">4</span></b></a></span><a name="4._Děliče_napětí_a_proudů"><span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue"><b>. 
+		Děliče napětí a proudů</b></span></a></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="2" height="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap colspan="2" height="24"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="4.1._Děliče_napětí">4.1. Děliče napětí</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Comic Sans MS; color: fuchsia">
+		&nbsp;&nbsp; </span></b></td>
+		<td nowrap width="90%">
+		<p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		<span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00"><u>Účel a 
+		použití:</u> snížení vstupního napětí na požadovanou velikost.</span></b></span></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table37" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="100%" colspan="3">
+		<span style="font-size: 13pt; color: #FF0000">
+		<a name="4.1.1._Nezatížené_děliče_napětí"><b>
+		<span style="font-family: Comic Sans MS">4</span></b></a></span><a name="4.1.1._Nezatížené_děliče_napětí"><span style="font-size: 13.0pt; font-family: Comic Sans MS; color: red"><b>.1.1. 
+		Nezatížené děliče napětí</b></span></a></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">
+		&nbsp;</td>
+		<td nowrap width="90%" colspan="2">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%" colspan="2">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">Jsou vhodné pro 
+		vysvětlení principu, <span style="background-color: #FFFF00">v&nbsp;praxi 
+		bývají děliče vždy zatíženy</span>.</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">Pokud je však zátěž 
+		(odporová) takové velikosti, že jí odebíraný proud lze zanedbat,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">(číslicové voltmetry, 
+		obvody s&nbsp;velkým vstupním odporem apod.), pak se zatížený</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">dělič blíží děliči&nbsp; 
+		nezatíženému.</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%" colspan="2">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%" colspan="2">
+		<img border="0" src="Tema03_Obr/Obr14.jpg" width="626" height="476"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%" colspan="2">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%" colspan="2">
+		<img border="0" src="Tema03_Obr/Obr15.jpg" width="626" height="324"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%" colspan="2">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+		<td nowrap width="30%" colspan="2">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">Při návrhu děličů je 
+		třeba <span style="background-color: #FFFF00">vzít v&nbsp;úvahu proud </span>
+		</span><span style="background-color: #FFFF00"><i>
+		<span style="font-size:14.0pt">I</span></i></span><span style="font-size:13.0pt;font-family:
+Arial">, neboť při volbě malých hodnot</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">odporů rezistorů by 
+		mohlo dojít k&nbsp;přetížení zdroje napětí na vstupu děliče.</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%" colspan="2">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="35%">
+		<img border="0" src="Tema03_Obr/Obr19.jpg" width="281" height="313"></td>
+		<td nowrap width="60%" valign="top">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b><u>
+		<span style="font-size: 13.0pt; font-family: Arial; background-color: #00FF00">
+		Aplikační tip:</span></u><span style="font-size: 13.0pt; font-family: Arial">&nbsp; 
+		předřadníky R<sub>P</sub> pro zvyšování rozsahu měřených napětí</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<b><span style="font-size: 13.0pt; font-family: Arial">výchylkových 
+		měřicích přístrojů.&nbsp;Pro vyšší napětí než asi 1kV</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</span></b></span><b>
+		<span style="font-size: 13.0pt; font-family: Arial">se používají </span>
+		</b><span style="font-size: 13pt"><b><span style="font-family: Arial">
+		měřicí transformátory.</span></b></span><b><span style="font-size: 13.0pt; font-family: Arial">
+		</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0">
+		&nbsp;</p>
+		<p>&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 3px">&nbsp;</p>
+<table border="0" width="950" id="table38" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="100%" colspan="2">
+		<span style="font-size: 13pt; color: #FF0000">
+		<a name="4.1.2._Zatížené_děliče_napětí"><b>
+		<span style="font-family: Comic Sans MS">4</span></b></a></span><a name="4.1.2._Zatížené_děliče_napětí"><span style="font-size: 13.0pt; font-family: Comic Sans MS; color: red"><b>.1.2. 
+		Zatížené děliče napětí</b></span></a></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">
+		&nbsp;</td>
+		<td nowrap width="90%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial">Je zohledněn
+		<span style="background-color: #FFFF00">praktický provoz</span> se 
+		zátěží (prozatím jen ryze odporovou).</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		<img border="0" src="Tema03_Obr/Obr16.jpg" width="611" height="364"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		<img border="0" src="Tema03_Obr/Obr17.jpg" width="612" height="540"></td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="950" id="table39" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="95%" colspan="2">
+		<b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="4.2._Děliče_proudu">4.2. Děliče proudu</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="10%">
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+		<td nowrap width="90%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+		<td nowrap width="30%">
+		<span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00"><u>Účel a 
+		použití:</u> snížení vstupního proudu napětí na požadovanou velikost.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		<img border="0" src="Tema03_Obr/Obr18.jpg" width="717" height="241"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+		<td nowrap width="30%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b><u>
+		<span style="font-size: 13.0pt; font-family: Arial; background-color: #00FF00">
+		Aplikační tip:</span></u><span style="font-size:13.0pt;font-family:Arial">&nbsp;bočníky 
+		pro zvyšování rozsahu měřených proudů</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		výchylkových měřicích přístrojů.</span></b></p>
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+		<td nowrap width="30%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b><u>
+		<span style="font-size: 13.0pt; font-family: Arial; background-color: #FFFF00">
+		Doporučení:</span></u><span style="font-size:13.0pt;font-family:
+Arial">&nbsp;kromě výpočtu velikostí <i>G<sub>1</sub></i> a <i>G<sub>2</sub></i> (</span><span style="font-size: 13pt"><i><span style="font-family: Arial">nebo 
+		R</span></i></span><span style="font-size: 13.0pt; font-family: Arial"><i><sub>1</sub></i> 
+		a <i>R<sub>2</sub></i></span><span style="font-size:13.0pt;font-family:
+Arial">) je třeba <font color="#FF0000">počítat výkony</font> na nich</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size:13.0pt;font-family:Arial">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;přeměněné v&nbsp;teplo (mohou jimi téci
+		<font color="#FF0000">poměrně velké proudy</font>).</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		<img border="0" src="Tema03_Obr/Obr20.jpg" width="539" height="441">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img border="0" src="Tema03_Obr/Obr21.jpg" width="270" height="239"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">
+		&nbsp;</td>
+		<td nowrap width="30%">
+		&nbsp;</td>
+	</tr>
+	</table>
+
+</body>
+
+</html>

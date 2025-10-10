@@ -1,0 +1,2271 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta charset="UTF-8">
+
+
+
+<title>Nová stránka 1</title>
+</head>
+
+<body background="obr/1.jpg"  bgcolor="#E6E6E6">
+
+<table border="0" width="886" id="table1" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="4">
+		<p class="MsoNormal" align="center"><font size="5" color="#FF0000"><b>
+		<span style="font-family: Comic Sans MS">Přechodné jevy v lineárních 
+		obvodech 2. řádu</span></b></font></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="13%"><u>
+		<font face="Comic Sans MS" color="#0000FF" size="4">Obsah:</font></u></td>
+		<td nowrap width="80%" colspan="3">
+		<font face="Comic Sans MS" size="4">
+		<a href="#1._Lineární_obvody_2._řádu">Lineární obvody 2. řádu</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="75%" colspan="2"><font face="Comic Sans MS">
+		<font color="#800000">-
+		<a href="#1.1._Příklady_lineárních_obvodů_2._řádu">
+		<font color="#800000">příklady lineárních obvodů 2. řádu</font></a></font></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="80%" colspan="3">
+		<font face="Comic Sans MS" size="4">
+		<a href="#2._Řešení_přechodného_děje">Řešení přechodného děje</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="75%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#2.1._Symbolické_(obecné)_řešení"><font color="#800000">
+		symbolické (obecné) řešení</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		<font face="Comic Sans MS"><i>- 
+		<a href="#2.1.1_Výchozí_ustálený_stav_obvodu">výchozí ustálený stav 
+		obvodu</a></i></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		<font face="Comic Sans MS"><i>- 
+		<a href="#2.1.2_Koncový_(cílový)_ustálený_stav_obvodu">koncový (cílový) 
+		ustálený stav obvodu</a></i></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		<font face="Comic Sans MS"><i>- 
+		<a href="#2.1.3_Sestavení_LDR_2._řádu">sestavení LDR 2. řádu</a></i></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		<font face="Comic Sans MS"><i>- 
+		<a href="#2.1.4_Řešení_sestavené_LDR_2._řádu">řešení sestavené LDR 2. 
+		řádu</a></i></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="80%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#2.2._Konkrétní_řešení"><font color="#800000">konkrétní řešení</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="80%" colspan="3">
+		<font face="Comic Sans MS" size="4"><a href="#3._Shrnutí">Shrnutí</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="80%" colspan="3">
+		<font face="Comic Sans MS" size="4"><a href="#4._Doporučená_literatura">
+		Doporučená literatura</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0">&nbsp;</p>
+<table border="0" width="886" id="table18" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="1._Lineární_obvody_2._řádu">1. Lineární obvody 2. řádu</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Jako 
+		podklad pro další studium je třeba zvládnout tématiku přechodných dějů v
+		<a target="_blank" href="Tema16.htm">obvodech 1. řádu</a>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Zde 
+		již nebudeme diskutovat probrané pojmy jako řád lineárního obvodu, 
+		postup sestavení LDR aj.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Zaměříme se především na hlavní odlišnosti lineárních obvodů 1. a 2. 
+		řádu.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		<span style="background-color: #FFFF00">Lineární obvody jsou 2. řádu</span> 
+		tehdy, když je <span style="background-color: #FFFF00">modelujeme 
+		lineární diferenciální rovnicí 2. řádu</span></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		(nejvyšší stupeň derivace je 2). Takové obvody obsahují zdroje a dále 
+		prvky R, L a C.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Obvody 
+		2. řádu obsahují dva nezávislé akumulační prvky (pouze L, pouze C nebo L 
+		a C).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<font face="Arial"><span style="font-size: 13pt; font-weight: 700">Z 
+		pohledu jiného druhu modelu poznáte obvody 2. řádu tak, že
+		<span style="background-color: #FFFF00">mnohočlen ve jmenovateli 
+		přenosové</span></span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		<span style="background-color: #FFFF00">funkce je 2. stupně</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table29" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.1._Příklady_lineárních_obvodů_2._řádu">1.1. 
+		Příklady lineárních obvodů 2. řádu</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Následující obrázek ukazuje vybrané typické představitele lineárních obvodů 2. 
+		řádu s jejich LDR.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr01.jpg" width="724" height="793"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">LDR 2. 
+		řádu na obrázku výše jsou sestaveny pro výstupní napětí. Je samozřejmě 
+		možné je sestavit</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">i pro 
+		jiné obvodové veličiny, např. proud vybraným prvkem apod. Postup zůstává 
+		stejný jako u obvodů</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">1. 
+		řádu.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Nyní 
+		se naučíte LDR 2. řádu sestavit na vybraném příkladě, řešit ji a 
+		vykreslovat časové průběhy.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Již 
+		předem je však třeba upozornit, že při přechodu na 2. řád mohou nastat 
+		stavy, které u obvodů</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">1. 
+		řádu nepřipadají v úvahu. Přechod z řádu 1 na 2 je obecně doprovázen 
+		výraznou změnou kvality,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">která se již u vyšších řádů 
+		neopakuje (kombinace 1. a 2. řádů).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table34" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="2._Řešení_přechodného_děje">2. Řešení přechodného děje</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Postup 
+		bude formálně shodný s tím u lineárních obvodů 1. řádu. Vše 
+		dokumentujeme na příkladě.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr02.jpg" width="359" height="210"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Našim 
+		cílem je výpočet a vykreslení časového průběhu proudu sériovým 
+		rezonančním obvodem RLC.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Přechodný děj je vyvolán sepnutím spínače v čase <span lang="en-us">t=0s</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Řešení 
+		však provedeme dvakrát. Nejprve obecně, poté konkrétně pro zadané 
+		hodnoty parametrů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Důvodem je, že obecné řešení postihne všechny možné stavy. Řešení 
+		konkrétní bude vždy jedním z nich.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table35" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="2.1._Symbolické_(obecné)_řešení">2.1. 
+		Symbolické (obecné) řešení</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Začněme tedy obecným řešením, jež postihne všechny možné typy časových 
+		průběhů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2">
+		<font face="Comic Sans MS" color="#FF0000" style="font-size: 13pt; font-weight: 700">
+		<a name="2.1.1_Výchozí_ustálený_stav_obvodu">2.1.1 
+		Výchozí ustálený stav obvodu</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Na 
+		počátku, před sepnutím spínače, se obvod nacházel ve výchozím ustáleném 
+		stavu. Je zřejmé, že</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		obvodem protékal nulový proud. Úbytky napětí na rezistoru a induktoru 
+		jsou tedy také nulové.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Jedinou nenulovou veličinou by mohlo být napětí na kapacitoru. Platí 
+		tedy tyto fyzikální,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">resp. 
+		matematické počáteční podmínky:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr03.jpg" width="323" height="127"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2">
+		<font face="Comic Sans MS" color="#FF0000" style="font-size: 13pt; font-weight: 700">
+		<a name="2.1.2_Koncový_(cílový)_ustálený_stav_obvodu">2.1.2 Koncový (cílový) ustálený stav 
+		obvodu</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Po 
+		dostatečně dlouhém čase od sepnutí spínače, ideálně v čase
+		<span lang="en-us">t=</span></span><font face="Times New Roman"><span lang="en-us">&#8734;</span></font><font face="Arial">, 
+		se bude obvod nacházet</font></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">v 
+		koncovém ustáleném stavu. Protože budicím zdrojem je stejnosměrná 
+		baterie, vlivem kapacitoru</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">opět 
+		bude procházet nulový proud. Úbytky napětí na rezistoru a induktoru 
+		budou také nulové.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		protože však platí II. Kirchhoffův zákon pro uzavřenou smyčku, musí být 
+		napětí na kapacitoru</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		číselně rovno napětí baterie. Platí tedy:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr04.jpg" width="306" height="113"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2">
+		<font face="Comic Sans MS" color="#FF0000" style="font-size: 13pt; font-weight: 700">
+		<a name="2.1.3_Sestavení_LDR_2._řádu">2.1.3 Sestavení LDR 2. řádu</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">LDR 2. 
+		řádu se vždy sestavuje pro obvod po sepnutí spínače (vyvolání 
+		přechodného děje).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr05.jpg" width="360" height="211"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Postup 
+		sestavení je formálně shodný s 1. řádem a nebudeme jej již vysvětlovat.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Obvod 
+		je tvořen jedinou smyčkou, kterou protéká jediný proud. Lze tedy 
+		jednoduše zapsat</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">I. a 
+		II. Kirchhoffův zákon a prvkové rovnice pro prvky R, L a C. Pro 
+		zjednodušení zápisu vynecháme</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">symbol 
+		pro časový průběh <span style="background-color: #FFFF00">(t)</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr06.jpg" width="423" height="141"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Nezapomeňte na integrační konstantu, kterou je vlastně napětí na 
+		kapacitoru v čase <span lang="en-us">t=0<sup>-</sup></span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Protože naším cílem je výpočet proudu, dosadíme prvkové rovnice do II. 
+		Kirchhoffova zákona.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr07.jpg" width="335" height="72"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Máme 
+		sestavenou lineární integro-diferencilání rovnici. Pro další řešení je 
+		vhodné ji převést na rovnici</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		diferenciální. Abychom se zbavili integrálu, celou rovnici zderivujeme 
+		podle času a seřadíme sestupně</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">podle 
+		stupně derivace.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr08.jpg" width="214" height="67"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Protože víte, že derivace konstanty je nula, jistě vás nepřekvapí 
+		vymizení členů u<sub>C</sub>(0<sup>-</sup>) a U<sub>BAT</sub>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00">Pozor ale v 
+		případech časově proměnných budicích zdrojů. Ty se pak v rovnici 
+		samozřejmě projeví.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Nyní 
+		celou LDR 2. řádu podělíme symbolem L, abychom u nejvyšší derivace měli 
+		jen jedničku.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Je to 
+		z důvodů tabelovaných postupů řešení (LDR v tzv. normálním tvaru).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr09.jpg" width="219" height="77"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Získali jsme LDR 2. řádu s konstantními koeficienty. Její řešení 
+		provedeme obecně podle zažitých</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		matematických pravidel.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2">
+		<font face="Comic Sans MS" color="#FF0000" style="font-size: 13pt; font-weight: 700">
+		<a name="2.1.4_Řešení_sestavené_LDR_2._řádu">2.1.4 Řešení sestavené LDR 2. řádu</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Tak 
+		jako v případě obvodů 1. řádu použijeme k řešení &quot;charakteristickou 
+		rovnici&quot; (CHR) naší LDR 2. řádu.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr10.jpg" width="188" height="67"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Nyní 
+		vyšetříme kořeny CHR a podle jejich povahy se budě větvit vlastní obecné 
+		řešení LDR.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Před 
+		tím však CHR přepíšeme použitím jednoduchých substitucí. Jejich použití 
+		souvisí s jednodušší</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		interpretací získaných výsledků.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr11.jpg" width="514" height="204"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Charakteristickou rovnici CHR nyní obecně vyřešíme a získáme její 
+		kořeny.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr12.jpg" width="463" height="63"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Nyní 
+		je třeba rozlišit všechny možné varianty - druhy kořenů CHR. Jsou celkem 
+		3.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr13.jpg" width="329" height="79"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><span style="font-family: Arial; font-size: 13pt">Tuto podm</span><span style="font-size: 13pt; font-family: Arial">ínku 
+		lze nastavit nejlépe <span style="background-color: #FFFF00">vyšší 
+		hodnotou odporu rezistoru R</span></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><span style="font-size: 13pt; font-family: Arial">(změna L a C poruší 
+		rezonanční kmitočet).</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">S 
+		uvážením dané podmínky platí pro kořeny CHR:
+		<span style="background-color: #FFFF00">kořeny jsou reálné různé</span> 
+		a to tak, že &#955;<sub>1</sub><span lang="en-us">&lt;0 a </span>&#955;<span lang="en-us"><sub>2</sub>&lt;0.</span></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><span style="font-size: 13pt" lang="en-us">
+		<span style="font-family: Arial">Podle matematických </span></span>
+		<span style="font-size: 13pt; font-family: Arial">pouček v případě 
+		těchto typů kořenů získáme toto obecné řešení LDR 2. řádu:</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr14.jpg" width="273" height="45"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><span style="font-size: 13pt" lang="en-us">
+		<span style="font-family: Arial">Doplněk t</span><font face="Arial">&#8805;0 
+		nahrazuje násoben</font></span><font face="Arial"><span style="font-size: 13pt">í 
+		výrazu jednotkovým skokem pro vynulování odezvy pro záporný čas.</span></font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr15.jpg" width="821" height="240"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">V levém grafu je ukázáno rozložení 
+		kořenů CHR v tzv. Gaussově komplexní rovině. Protože jsou oba</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">oba kořeny reálné různé a záporné, leží 
+		oba v levé polorovině.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">V pravém grafu je typický tvar časového 
+		průběhu pro dané typy kořenů CHR.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">Časový průběh není perio</span><span style="font-size: 13pt">dický, 
+		proto ten</span><span style="font-size: 13pt" lang="en-us">to typ 
+		přechodného dějě nazýváme</span></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">
+		<span style="background-color: #FFFF00">aperiodický přechodný děj</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr16.jpg" width="332" height="76"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><span style="font-family: Arial; font-size: 13pt">Tuto podm</span><span style="font-size: 13pt; font-family: Arial">ínku 
+		lze nastavit nejlépe <span style="background-color: #FFFF00">o něco 
+		nižší (ale ne moc) hodnotou odporu rezistoru R.</span></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pro 
+		kořeny CHR pak platí:
+		<img border="0" src="Tema17_Obr/Obr17.jpg" width="126" height="37"></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pro 
+		tento typ kořenů CHR platí toto obecné řešení LDR:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr18.jpg" width="293" height="46"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Kořeny 
+		CHR jsou nyní dva, stejné, reálné a záporné (dvojnásobný reálný kořen).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr19.jpg" width="816" height="233"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Ze 
+		všech možných aperiodických průběhů je tento děj nejkratší. </span></b>
+		</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Říkáme, že <span style="background-color: #FFFF00">obvod se nachází na 
+		mezi aperiodicity</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr20.jpg" width="325" height="81"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><span style="font-family: Arial; font-size: 13pt">Tuto podm</span><span style="font-size: 13pt; font-family: Arial">ínku 
+		lze nastavit nejlépe <span style="background-color: #FFFF00">ještě nižší 
+		hodnotou odporu rezistoru R.</span></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Tato 
+		podmínka však znamená, že výraz pod odmocninou v obecném výrazu pro 
+		kořeny CHR</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">bude 
+		záporný.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr21.jpg" width="543" height="128"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Tomuto 
+		typu kořenů CHR odpovídá obecné řešení:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr22.jpg" width="447" height="46"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Časový 
+		průběh již nebude aperiodický, ale kmitavý s klesající amplitudou.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr23.jpg" width="818" height="332"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Vidíme 
+		zde zcela neobvyklé chování lineárního obvodu 2. řádu. </span></b>
+		</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Obvod 
+		je buzen stejnosměrně a přesto za uvedených podmínek (malý odpor R) 
+		vykazuje proud</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		harmonický průběh s klesající amplitudou. V obvodu vznikly tlumené 
+		harmonické kmity, jejichž kmitočet</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">není 
+		roven rezonančnímu, ale vlastnímu kmitočtu &#969;<sub>V</sub> (o něco menší, 
+		než rezonanční).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Kořeny 
+		CHR jsou nyní dvě komplexně sdružená čísla, jejichž souřadnice jsou dány 
+		hodnotami</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">&#946; a &#969;<sub>V. 
+		Činitel tlumení </sub>&#946; je zodpovědný za exponenciální pokles amplitudy 
+		kmitů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Říkáme, že jde o <span style="background-color: #FFFF00">kmitavý 
+		přechodný děj</span>. Existence harmonických kmitů je dána současným 
+		působením</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">prvků 
+		L a C (duální reaktanční prvky).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<font color="#FF0000"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; text-decoration: underline">Režim 
+		oscilátor</span></b></span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pokud 
+		by se podařilo zajistit, aby amplituda harmonických kmitů neklesala, 
+		obdrželi bychom harmonický</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		oscilátor. Tedy tzv. autonomní obvod, který vyrábí harmonický průběh, 
+		aniž je jím buzen.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">To by 
+		ovšem znamenalo, že musí platit:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr24.jpg" width="318" height="65"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pro 
+		nulový činitel tlumení &#946; je třeba zajistit nulový celkový odpor. Pak 
+		bychom dostali:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr25.jpg" width="95" height="72"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Kořeny 
+		CHR jsou opět komplexně sdružená čísla, avšak nacházejí se na imaginární 
+		ose Gaussovy roviny.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr26.jpg" width="819" height="341"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Je 
+		zřejmé, že posunem kořenů do pravé poloroviny by došlo k nárůstu 
+		amplitudy kmitů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Tak 
+		můžeme shrnout, že leží-li všechny kořeny CHR LDR v levé polorovině 
+		Gaussovy komplexní roviny,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">je 
+		daný lineární elektrický obvod stabilní, tedy jeho kmitavá odezva v čase 
+		zaniká.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Poloha 
+		kořenů na imaginární ose naznačuje obvod na mezi stability (podmíněně 
+		stabilní obvod).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Jde o 
+		analogii kyvadla se závažím v horní úvrati.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<font face="Arial" style="font-size: 13pt; font-weight: 700">Poloha 
+		kořenů (alespoň jednoho) CHR v pravé polorovině naznačuje, že jde o 
+		nestabilní obvod.</font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Uvedené se samozřejmě týká 
+		pouze posledního typu přechodného děje - kmitavého.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="text-decoration: underline"><font color="#FF0000">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Kritický odpor</span></b></span></font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Kritická hodnota odporu 
+		rezistoru R udává hranici mezi přechodnými ději aperiodickým a kmitavým</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">a svou přesnou hodnotou udává 
+		mez aperiodicity.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">U obvodu na mezi aperiodicity 
+		platilo:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr27.jpg" width="283" height="74"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Z posledního výrazu vyjádříme 
+		odpor R:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr28.jpg" width="200" height="72"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Pak lze uvést tyto podmínky 
+		pro jednotlivé typy přechodných dějů:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<font face="Arial" style="font-size: 13pt">
+		<span style="font-weight: 700" lang="en-us">R&gt;Rkrit ... aperiodick</span><span style="font-weight: 700">ý 
+		přechodný děj</span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">R=Rkrit ... mez aperiodicity</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">R&lt;Rkrit ... kmitavý přechodný 
+		děj.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">Známe-li hodnoty L a C, 
+		snadno určíme typ přechodného děje.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="text-decoration: underline"><font color="#FF0000">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Činitel jakosti a charakteristická impedance</span></b></span></font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">Jak jistě víte z tématu o 
+		rezonanci, lze pro každý rezonanční (kmitavý) obvod vypočítat</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">
+		<span style="background-color: #FFFF00">činitel jakosti Q</span>.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">Jedním ze vztahů pro činitel 
+		jakosti je vztah:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr29.jpg" width="115" height="62"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">kde Z<sub>0</sub> je tzv. &quot;charakteristická 
+		impedance&quot; rezonančního obvodu. Pro tuto impedanci platí:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr30.jpg" width="98" height="70"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">Srovnáte-li poslední vztah se 
+		vztahem pro kritický odpor, zjistíte, že platí:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr31.jpg" width="249" height="74"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">Výše uvedené podmínky pro 
+		jednotlivé typy přechodných dějů pak můžeme vyjádřit také jinak:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">Q</font></span><font face="Arial" style="font-size: 13pt"><span style="font-weight: 700" lang="en-us">&lt;0,5 
+		... aperiodick</span><span style="font-weight: 700">ý přechodný děj</span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">Q=0,5 ... mez aperiodicity</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">Q&gt;0,5 ... kmitavý přechodný 
+		děj.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">V praxi lze jednotlivé typy 
+		přechodných dějů nastavovat hodnotami odporu R při neměnné rezonanční</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700" lang="en-us">
+		<font face="Arial" style="font-size: 13pt">frekvenci.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table41" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="2.2._Konkrétní_řešení">2.2. 
+		Konkrétní řešení</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Nejprve rozhodneme o typu 
+		přechodného děje výpočtem kritického odporu pro zadané hodnoty L a C.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr32.jpg" width="339" height="69"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><font face="Arial">
+		<span style="font-size: 13pt; font-weight: 700">Velikost odporu 
+		zapojeného rezistoru je R<span lang="en-us">=100&#937;. Platí ted</span>y
+		<span lang="en-us"><span style="background-color: #FFFF00">R&lt;R<sub>krit</sub></span>.</span></span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<font face="Arial" style="font-size: 13pt; background-color: #FFFF00">
+		<span style="font-weight: 700" lang="en-us">Protože je hodnota odporu 
+		zapojeného rezistoru menší, ne</span><span style="font-weight: 700">ž 
+		kritický odpor, jde o kmitavý přechodný děj.</span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Pro činitel jakosti našeho 
+		obvodu pak platí, že <span lang="en-us">Q&gt;0,5 [-]</span>:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr33.jpg" width="348" height="66"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Charakteristická impedance 
+		obvodu má poloviční hodnotu, než kritický odpor:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr34.jpg" width="223" height="69"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Přechodný děj tedy bude 
+		kmitavého typu. Zapišme nyní LDR 2. řádu s dosazenými čísly:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr35.jpg" width="611" height="85"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr36.jpg" width="332" height="177"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Pro CHR platí:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr37.jpg" width="542" height="62"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Podle výše uvedených důkazů 
+		platí pro kořeny CHR následující:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr38.jpg" width="357" height="38"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Kořeny CHR tvoří komplexně 
+		sdružený pár. Půjde tedy o harmonický průběh proudu s exponenciálně</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">klesající amplitudou podle 
+		výše uvedeného vztahu:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr22.jpg" width="447" height="46"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt; background-color: #FFFF00">
+		Obvod je stabilní, neboť oba kořeny CHR leží v levé polorovině Gaussovy 
+		komplexní roviny.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr39.jpg" width="815" height="334"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Posledním úkolem je číselně 
+		určit integrační konstanty ve vztahu pro časový průběh proudu i(t).</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Předpokládejme, že v okamžiku 
+		začátku přechodného děje byl kapacitor zcela vybit, tedy že
+		<span style="background-color: #FFFF00">u<sub>C</sub>(0)<span lang="en-us">=0V</span></span>.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Pro určení dvou integračních 
+		konstant A<sub>1</sub> a A<sub>2</sub> bude třeba sestavit dvě rovnice o 
+		dvou neznámých</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">a to pro čas
+		<span lang="en-us"><span style="background-color: #FFFF00">t=0s</span>.</span></font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">První rovnice vznikne přímo z 
+		obecného časového průběhu, kam dosadíme známá čísla.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Druhá rovnice vzejde z první 
+		derivace časového průběhu.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr40.jpg" width="581" height="156"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Ve druhém řádku výše 
+		zapsaného vztahu jsme využili počáteční podmínky (výchozí ustálený 
+		stav).</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Nyní zderivujeme časový 
+		průběh proudu:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr41.jpg" width="658" height="103"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Do této rovnice dosadíme čas
+		<span lang="en-us">t=0s</span> (počáteční podmínka), získáme:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr42.jpg" width="404" height="62"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Číslo 33,3333 jsme získali z 
+		výše uvedené integrodiferenciální rovnice, kam jsme dosadili podmínku</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">i(0)<span lang="en-us">=0</span> 
+		a čas <span lang="en-us">t=0s</span>.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Protože A<sub>1</sub><span lang="en-us">=0A,</span> 
+		získává poslední uvedená rovnice jednoduchou podobu:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr42.jpg" width="404" height="62"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Celkové řešení s dosazenými 
+		čísly pak má tvar:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr43.jpg" width="404" height="61"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr44.jpg" width="503" height="368"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Na obrázku níže je ukázána 
+		simulace téhož případu v programu Micro-Cap, ver.9.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr45.jpg" width="800" height="485"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Obvod může být samozřejmě 
+		buzen i jinak, než stejnosměrně. Vlastní kmity se přesto projeví.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Obrázek níže ukazuje průběh 
+		budicího napětí a proudu obvodem. <span style="background-color: #FFFF00">
+		Přechodný děj je způsoben buzením</span>.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr46.jpg" width="800" height="534"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Všimněte si, že na obrázku 
+		výše jsou v průběhu proudu vlastně dva kmitočty.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Jeden je dán buzením, druhý 
+		vlastními kmity. Takové případy mohou dát někdy simulátoru řádně 
+		&quot;zabrat&quot;.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Zvýší-li se hodnota odporu 
+		rezistoru, <span style="background-color: #FFFF00">přechodný děj se může 
+		stát aperiodickým</span>, viz. obrázek níže.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema17_Obr/Obr47.jpg" width="800" height="534"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Jistě jste si všimli, že 
+		nedojde-li ke změně topologie obvodu, je tento popsán stále stejnou LDR.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Výběr konkrétního výstupu se 
+		projeví na pravé straně LDR.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table42" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2">
+		<p style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="3._Shrnutí">3. Shrnutí</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&nbsp;&#9679;&nbsp;</span></b><span style="font-weight: 700"><font face="Arial" style="font-size: 13pt" color="#0000FF">p</font></span><font face="Arial" style="font-size: 13pt; font-weight: 700" color="#0000FF">řechodný 
+		děj v lineárním obvodu 2. řádu modelujeme
+		<span style="background-color: #FFFF00">lineární diferenciální rovnicí 
+		2. řádu</span>,</font></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&nbsp;&#9679; </span></b>
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt" color="#0000FF">p</font></span><font face="Arial" style="font-size: 13pt; font-weight: 700" color="#0000FF">řechodný 
+		děj v lineárním obvodu 1. řádu může mít aperiodický nebo kmitavý 
+		charakter,</font></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&nbsp;&#9679; 
+		typ přechodného děje je dán velikostí celkového odporu v obvodu v 
+		porovnání</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp;&nbsp; </span></b></span><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">s 
+		tzv. kritickým odporem,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&nbsp;&#9679; 
+		při kmitavém charakteru přechodného děje vznikají v obvodu vlastní 
+		harmonické kmity, nezávisle</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp;&nbsp; na druhu budicího 
+		signálu,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&nbsp;&#9679; 
+		tento typ dějů je však možný pouze tehdy, jsou-li v obvodu přítomny 
+		současně prvky L i C</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp;&nbsp; (rezonance).</span></b></span></p></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table49" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2">
+		<p class="MsoNormal"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="4._Doporučená_literatura">4. Doporučená literatura</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Biolek, D. a kol. Úvod do 
+		elektrotechniky. Skriptum S-13. Vojenská akademie v Brně, 1997.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Biolek, D. a kol. 
+		Elektronické obvody I. Učebnice. Univerzita obrany, Brno 2006. ISBN 
+		80-7231-169-7.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Biolek, D. Řešíme 
+		elektronické obvody. BEN-technická literatura, Praha 2004. ISBN 
+		80-7300-125-X.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Přehled skript a učebnic 
+		souhrnně
+		<a target="_blank" href="http://user.unob.cz/zaplatilek/skripta.htm">zde</a>.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	</table>
+
+</body>
+
+</html>

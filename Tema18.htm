@@ -1,0 +1,2180 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta charset="UTF-8">
+
+
+
+<title>Nová stránka 1</title>
+</head>
+
+<body background="obr/1.jpg"  bgcolor="#E6E6E6">
+
+<table border="0" width="886" id="table1" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="4">
+		<p class="MsoNormal" align="center"><font size="5" color="#FF0000"><b>
+		<span style="font-family: Comic Sans MS">Kmitočtové charakteristiky 
+		lineárních obvodů</span></b></font></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="13%"><u>
+		<font face="Comic Sans MS" color="#0000FF" size="4">Obsah:</font></u></td>
+		<td nowrap width="80%" colspan="3">
+		<font face="Comic Sans MS" size="4">
+		<a href="#1._Kmitočtová_závislost_obvodových_funkcí_lineárních_obvodů">
+		Kmitočtová závislost obvodových funkcí lineárních obvodů</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="75%" colspan="2"><font face="Comic Sans MS">
+		<font color="#800000">-
+		<a href="#1.1._Lineární_statické_obvody"><font color="#800000">lineární 
+		statické obvody</font></a></font></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="75%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#1.2._Lineární_dynamické_obvody"><font color="#800000">lineární 
+		dynamické obvody</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		<font face="Comic Sans MS"><i>- 
+		<a href="#1.2.1_Decibelová_stupnice_zesílení_modulové_kmitočtové_charakteristiky">
+		decibelová stupnice zesílení modulové kmitočtové charakteristiky</a></i></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		<font face="Comic Sans MS"><i>- 
+		<a href="#1.2.2_Skupinové_zpoždění_-_třetí_kmitočtová_charakteristika">
+		skupinové zpoždění - třetí kmitočtová charakteristika</a></i></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="85%" colspan="3"><font face="Comic Sans MS" size="4">
+		<a href="#2._Analytický_výpočet_kmitočtových_charakteristik_lineárních_obvodů">
+		Analytický výpočet kmitočtových charakteristik lineárních obvodů</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="80%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#2.1._Komplexní_(obrazový)_přenos_lineárních_dynamických_obvodů">
+		<font color="#800000">komplexní (obrazový) přenos lineárních dynamických 
+		obvodů</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="80%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#2.2._Příklady_kmitočtových_charakteristik_vybraných_lineárních_dynamických_obvodů">
+		<font color="#800000">příklady kmitočtových charakteristik vybraných 
+		lineárních obvodů</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="80%" colspan="3">
+		<u><font size="4" face="Comic Sans MS" color="#0000FF">
+		<a href="#3._Shrnutí">Shrnutí</a></font></u></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="80%" colspan="3">
+		<font face="Comic Sans MS" size="4"><a href="#4._Doporučená_literatura">
+		Doporučená literatura</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0">&nbsp;</p>
+<table border="0" width="886" id="table18" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="1._Kmitočtová_závislost_obvodových_funkcí_lineárních_obvodů">1. Kmitočtová závislost obvodových funkcí lineárních obvodů</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="93%" colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.1._Lineární_statické_obvody">1.1. 
+		Lineární statické obvody</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		<span style="background-color: #FFFF00">Statické obvody</span> se sestávají pouze ze zdrojů a rezistorů (lineárních i 
+		nelineárních).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Uvažujme pro jednoduchost lineární statický obvod podle obrázku. Jde o 
+		nezatížený dělič napětí.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<img border="0" src="Tema18_Obr/Obr01.jpg" width="834" height="725"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Na 
+		odporový nezatížený dělič napětí působí ze vstupu harmonický signál 
+		tvaru sinus s amplitudou</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">2V a 
+		proměnným kmitočtem 1500Hz a 3000Hz.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Na 
+		výstupu je amplituda harmonického napětí menší podle dělicího poměru (je 
+		poloviční) a to pro oba</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		kmitočty. <span style="background-color: #FFFF00">Kmitočet výstupu je 
+		vždy shodný s budicím</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Počáteční fáze harmonického buzení se nezměnila, je stále 0<span lang="en-us"> 
+		[</span>rad<span lang="en-us">]</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Klíčem 
+		k pochopení kmitočtových charakteristiky je tabulka pod obvodem.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Při 
+		reálném měření byste nastavili kmitočet generátoru na 1,5kHz a změřili 
+		amplitudu vstupního</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">a 
+		výstupního napětí. Z těchto dvou hodnot vypočtete nyní 
+		<span style="background-color: #FFFF00">zesílení K<sub>U</sub></span> 
+		jako jejich podíl (výstup ku vstupu)</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">- 
+		červený řádek. Pro tentýž nastavený kmitočet nyní zjistíte počáteční 
+		fázi vstupu a výstupu a vypočtete</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">jejich 
+		rozdíl, tedy souhrnně:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<img border="0" src="Tema18_Obr/Obr02.jpg" width="269" height="105"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Tento 
+		postup zopakujeme pro další kmitočty vstupního harmonického signálu, 
+		viz. tabulka výše.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pro 
+		vykreslení kmitočtových charakteristik jsou klíčové podbarvené řádky 
+		tabulky. </span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Z nich 
+		sestrojíme dva grafy podle obrázku níže.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<img border="0" src="Tema18_Obr/Obr03.jpg" width="571" height="556"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%" bgcolor="#FF0000">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Modulová (amplitudová) kmitočtová charakteristika ukazuje, jak se mění 
+		zesílení obvodu s kmitočtem</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%" bgcolor="#FF0000">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		budicího harmonického signálu. Je zřejmé, že u statických obvodů jde o 
+		konstantu. Statické obvody</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%" bgcolor="#FF0000">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">nemají 
+		kmitočtově závislé obvodové funkce.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%" bgcolor="#3399FF">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Fázová 
+		(argumentová) kmitočtová charakteristika ukazuje, jak se mění vzájemný 
+		fázový posun výstupního</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%" bgcolor="#3399FF">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">a 
+		vstupního harmonického signálu. U statických obvodů jsou oba signály ve 
+		fázi, vzájemný posun je tedy</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%" bgcolor="#3399FF">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		nulový.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00">Kmitočtové 
+		charakteristiky jsou definovány pro lineární obvody v harmonickém 
+		ustáleném stavu (HUS).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Je-li 
+		obvod buzen jinak, než harmonicky nebo se projevuje přechodný děj, nelze 
+		o kmitočtových</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		charakteristikách hovořit.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<p align="right"><b>
+		<font color="#0000FF" style="font-size: 13pt" face="Arial">
+		<a target="_blank" href="http://en.wikipedia.org/wiki/Frequency_response">
+		http://en.wikipedia.org/wiki/Frequency_response</a></font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table29" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="1.2._Lineární_dynamické_obvody">1.2. 
+		Lineární dynamické obvody</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Proveďme nyní stejný pokus, ale pro jednoduchý RC obvod (kmitočtově 
+		závislý dělič napětí).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Protože obvod obsahuje lineární kapacitor, jde o lineární dynamický 
+		obvod 1. řádu.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Obvodové funkce dynamických obvodů budou zřejmě záviset na kmitočtu 
+		budicího harmonického</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">signálu právě z důvodů přítomnosti 
+		akumulačního prvku (viz. impedance).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr04.jpg" width="828" height="704"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Jak je 
+		zřejmé z časových průběhů výstupních signálů, s kmitočtem budicího 
+		harmonického signálu</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">se 
+		mění jak amplituda, tak také počáteční fáze. To je hlavní a klíčová 
+		odlišnost od statických obvodů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Dále 
+		postupujeme stejně, tedy vykreslíme obě kmitočtové charakteristiky.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr05.jpg" width="564" height="650"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Pokud bychom nyní vykreslili obě 
+		kmitočtové charakteristiky pro větší rozsah kmitočtů s menším krokem,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">obdržíme následující:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr06.jpg" width="800" height="600"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Takto kreslení charakteristiky však 
+		nejsou často vhodné, neboť jak je vidět, změny se odehrávají</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">na počátku grafů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Je proto často vhodnější kreslit grafy 
+		s logaritmickou osou kmitočtu:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr07.jpg" width="800" height="600"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Takto vykreslení kmitočtové 
+		charakteristiky už můžeme považovat za využitelné. Ze závislosti 
+		zesílení</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">na kmitočtu budicího harmonického 
+		signálu je vidět, že nízké kmitočty jsou přenášeny se zesílením</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><b>
+		<span style="font-family: Arial; font-size: 13pt" lang="en-us">K<sub>U</sub>=1</span><span style="font-size: 13pt; font-family: Arial">, 
+		tedy bez útlumu. Naopak kmitočty vysoké jsou potlačeny (zesílení
+		<span lang="en-us">K<sub>U</sub>&lt;&lt;1)</span>. Můžeme říci, že</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">daný lineární dynamický obvod se chová 
+		jako kmitočtový filtr typu dolní propust (DP).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">Lze najít kmitočet budicího 
+		harmonického signálu, který stanoví hranici, do které obvod
+		<span lang="en-us">typu DP (jin</span>é ne)</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">přenáší vstupní<span lang="en-us">
+		</span>signál bez potlačení. Nazýváme jej mezním kmitočtem </span>
+		<font face="Times New Roman">&#969;<sub>0</sub> </font><span style="font-family: Arial">(angl. cut-off 
+		frequency). </span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Mezní kmitočet je dán, není-li řečeno 
+		jinak, pro zesílení o hodnotě cca 70,7<span lang="en-us">%</span> maxima</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">přesněji:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr08.jpg" width="169" height="62"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Na obrázku výše je toto vyznačeno žlutě 
+		podbarvenými souřadnicemi. Lze dokázat, že pro obvody</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">1. řádu platí:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr09.jpg" width="157" height="61"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">kde </span>
+		<span style="font-family: Symbol">t </span>
+		<span style="font-family: Arial">je časová konstanta obvodu v
+		<span lang="en-us">[s]</span>. Pro náš 
+		případ tedy můžeme analyticky určit podle schématu:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr10.jpg" width="466" height="128"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Časová konstanta </span>
+		<span style="font-family: Symbol">t<span lang="en-us">=100m</span></span><span style="font-family: Arial" lang="en-us">s.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Je zajímavé, že hodnota fázového 
+		rozdílu ve fázové kmitočtové charakteristice pro mezní kmitočet</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">vychází pro náš konkrétní obvod </span>
+		<span style="font-family: Symbol">j</span><span style="font-family: Arial">(f<sub>0</sub>)<span lang="en-us">=</span></span><span lang="en-us"><font face="Times New Roman">&#960;/4 
+		[rad.s<sup>-1</sup>].</font></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #00FFFF">Můžeme tedy 
+		shrnout:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">
+		&#9679;&nbsp;obvodové funkce, tedy zejména zesílení a fázový rozdíl, u statických 
+		obvodů nezávisí na kmitočtu,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679;
+		<span style="background-color: #FFFF00">u dynamických obvodů (s L a C) 
+		naopak tyto funkce na kmitočtu závisejí</span></span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; </span></b></span><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">
+		(kmitočtu budicího harmonického signálu),</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		kmitočtové charakteristiky jsou prozatím dvě a jde o kmitočtovou 
+		závislost zesílení obvodu</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; a fázového rozdílu mezi 
+		výstupním a vstupním harmonickým signálem,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		hovoříme o Modulové a fázové kmitočtové charakteristice,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		pro libovolný kmitočet budicího harmonického signálu lze z těchto 
+		charakteristik odečíst hodnoty</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; zesílení a fázového 
+		rozdílu,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		kmitočtové charakteristiky jsou definovány pouze pro lineární obvody v 
+		harmonickém ustáleném</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; stavu, viz. téma
+		<span style="background-color: #FFFF00">
+		<a target="_blank" href="Tema11.htm">zde</a></span>,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		kmitočtově závislé lineární obvody (tedy dynamické obvody) můžeme 
+		nazývat <span style="background-color: #FFFF00">kmitočtovými filtry</span>,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; neboť vždy určitou 
+		část-pásmo kmitočtů přenášení bez potlačení, jiné s potlačením,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		u kmitočtových filtrů definujeme tzv.
+		<span style="background-color: #FFFF00">mezní kmitočet</span>, který 
+		tato pásma (bands) od sebe odlišuje.</span></b></p></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right"><font face="Arial" color="#0000FF"><u><i><b>
+		<span style="font-size: 13pt">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Filtr_(zpracování_signálu)">
+		http://cs.wikipedia.org/wiki/Filtr_(zpracování_signálu)</a></span></b></i></u></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2"><span style="font-weight: 700">
+		<font face="Comic Sans MS" style="font-size: 13pt" color="#FF0000">
+		<a name="1.2.1_Decibelová_stupnice_zesílení_modulové_kmitočtové_charakteristiky">1</a></font></span><a name="1.2.1_Decibelová_stupnice_zesílení_modulové_kmitočtové_charakteristiky"><font face="Comic Sans MS" color="#FF0000" style="font-size: 13pt; font-weight: 700">.2.1 
+		Decibelová stupnice zesílení modulové kmitočtové charakteristiky</font></a></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Svislá osa modulové kmitočtové 
+		charakteristiky má význam zesílení a jde o bezrozměrnou veličinu</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">K<sub>U</sub>=U<sub>2</sub>/U<sub>1</sub> 
+		[-], kde U<sub>1 </sub>a U</span></b></span><span style="font-size: 13pt" lang="en-us"><sub><b><span style="font-family: Arial">2
+		</span></b></sub><b><span style="font-family: Arial">jsou amplitud</span></b></span><b><span style="font-size: 13pt; font-family: Arial">y 
+		vstupního a výstupního harmonického signálu pro každý</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">kmitočet buzení.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Řada lineárních dynamických obvodů</span></b></span>
+		<span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">však vyžaduje na svislé ose poměrně 
+		značný rozsah hodnot, např.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">od 1 do 10<sup>-5</sup>. V takovém 
+		případě je vhodné volit osu nikoliv lineární, ale logaritmickou tak, jak 
+		jsme to</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">provedli s osou kmitočtu výše.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">U svislé osy zesílení však nepůjde o 
+		prostý logaritmus, ale o následující zobrazení:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr11.jpg" width="169" height="38"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><b><span style="font-size: 13pt" lang="en-us">
+		<span style="font-family: Arial">Důvod je historický. Takto definovanou 
+		veličinu budeme udávat v jednotkách
+		<span style="background-color: #FFFF00">decibel [dB]</span></span></span><span style="font-size: 13pt; font-family: Arial">.</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right">
+		<font face="Arial" style="font-size: 13pt; font-weight: 700; text-decoration: underline; font-style: italic" color="#0000FF">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Decibel">
+		http://cs.wikipedia.org/wiki/Decibel</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><b>
+		<span style="font-family: Arial; font-size: 13pt" lang="en-us">
+		Decibelová (upravená logaritmická) stupnice se používá u veličin, které 
+		vyjadřují poměr a když je třeba</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<font face="Arial" style="font-size: 13pt; font-weight: 700">
+		&quot;komprimovat&quot; původně lineární osu (zhustit).</font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">Je třeba se naučit pracovat s decibely. 
+		K tomu můžeme využít tuto tabulku:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr12.jpg" width="350" height="355"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">Je vidět, že decibelová stupnice 
+		opravdu komprimuje lineární osu</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">(jde o svého druhu kompresní algoritmus).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><b>
+		<font face="Arial" style="font-size: 13pt; text-decoration: underline" color="#FF0000">
+		Příklad 1</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><b><span style="font-size: 13pt" lang="en-us">
+		<span style="font-family: Arial">Budeme-li tedy tvrdit, že daný obvod má 
+		zesílení K<sub>udB</sub>=77 dB </span></span>
+		<span style="font-size: 13pt; font-family: Arial">na kmitočtu
+		<span lang="en-us">f<sub>0</sub>=66 kHz</span>, pak můžeme</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">vypočítat &quot;klasické&quot; zesílení: </span>
+		</b></span><b>
+		<span style="font-family: Arial; font-size: 13pt" lang="en-us">
+		<span style="background-color: #FFFF00">K<sub>u</sub>=10<sup>77/20</sup></span>=7079,46
+		</span><span style="font-size: 13pt; font-family: Arial" lang="en-us">
+		[-]</span><span style="font-size: 13pt; font-family: Arial">. A naopak
+		</span><span style="font-family: Arial; font-size: 13pt" lang="en-us">K<sub>udB</sub>=20log7079,46=77 
+		dB</span><span style="font-family: Arial; font-size: 13pt">.</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><b>
+		<font face="Arial" style="font-size: 13pt; text-decoration: underline" color="#FF0000">
+		Příklad 2</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><b><span style="font-size: 13pt" lang="en-us">
+		<span style="font-family: Arial">Jaká je amplituda výstupního 
+		harmonického signálu, je-li vstupní U<sub>1</sub>=<span style="background-color: #00FFFF">66V</span> 
+		a </span></span><span style="font-size: 13pt; font-family: Arial">
+		zesílení obvodu na</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">kmitočtu </span></b></span><b>
+		<span lang="en-us" style="font-size: 13pt; font-family: Arial">f<sub>0</sub>=104 
+		MHz je </span>
+		<span style="font-family: Arial; font-size: 13pt" lang="en-us">K<sub>udB</sub>=-88 
+		dB?</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt" lang="en-us"><b>
+		<span style="font-family: Arial">Analogicky tedy </span></b></span><b>
+		<span style="font-family: Arial; font-size: 13pt" lang="en-us">K<sub>u</sub>=10<sup>-88/20</sup>=39,81.10<sup>-6</sup>
+		</span><span style="font-size: 13pt; font-family: Arial" lang="en-us">
+		[-]. A protože platí: </span></b><b>
+		<span style="font-size: 13pt" lang="en-us">
+		<span style="font-family: Arial">K<sub>U</sub>=U<sub>2</sub>/U<sub>1</sub> 
+		[-], pak <span style="background-color: #FFFF00">U<sub>2</sub>=K<sub>U.</sub>U</span><sub><span style="background-color: #FFFF00">1</span>.</sub></span></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><b>
+		<span style="font-size: 13pt; font-family: Arial">Číselně vychází:
+		</span><span style="font-family: Arial; font-size: 13pt" lang="en-us">U<sub>2</sub>=39,81.10<sup>-6</sup>.66=<span style="background-color: #00FFFF">2,63 
+		mV</span>.</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><b>
+		<span style="font-family: Arial; font-size: 13pt" lang="en-us">
+		<span style="background-color: #00FF00">Všimněte si, že </span></span>
+		<span style="font-size: 13pt; font-family: Arial; background-color: #00FF00">
+		je třeba vždy uvádět, pro který kmitočet naše údaje platí.</span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2"><span style="font-weight: 700">
+		<font face="Comic Sans MS" style="font-size: 13pt" color="#FF0000">
+		<a name="1.2.2_Skupinové_zpoždění_-_třetí_kmitočtová_charakteristika">1</a></font></span><a name="1.2.2_Skupinové_zpoždění_-_třetí_kmitočtová_charakteristika"><font face="Comic Sans MS" color="#FF0000" style="font-size: 13pt; font-weight: 700">.2.2 
+		Skupinové zpoždění - třetí kmitočtová charakteristika</font></a></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Kromě modulové a fázové kmitočtové 
+		charakteristiky je praktické uvádět ještě třetí, tzv.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">charakteristiku skupinového zpoždění.
+		</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Skupinové zpoždění je definováno z 
+		fázové charakteristiky podle vztahu:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr29.jpg" width="191" height="71"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Jednotkou skupinového zpoždění 
+		(anglicky <i>group delay</i>) je sekunda. Významný je fyzikální význam</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">charakteristiky skupinového zpoždění. 
+		Pro každý kmitočet budicího harmonického signálu</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">na vodorovné ose grafu udává skupinové 
+		zpoždění skutečné reálné zpoždění harmonického signálu</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">při průchodu obvodem, viz. obrázek 
+		níže.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr30.jpg" width="800" height="515"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Z obrázku výše je vidět, že pro mezní 
+		kmitočet 1,592kHz je zpoždění </span><span style="font-family: Symbol">t<span lang="en-us">(</span></span><span style="font-family: Times New Roman" lang="en-us">&#969;<sub>m</sub>)=50,058</span><span lang="en-us" style="font-family: Symbol">m</span><font face="Arial"><span lang="en-us">s</span></font><span lang="en-us" style="font-family: Symbol">.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><b>
+		<span style="font-size: 13pt; font-family: Arial">Fakt, že </span></b>
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		<span style="background-color: #00FF00">charakteristika skupinového 
+		zpoždění není konstantní</span>, svědčí o tom, že daný lineární systém</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">způsobuje
+		<span style="background-color: #00FFFF">lineární zkreslení</span>. V 
+		případě nezkreslujícího obvodu by tento musel přenášet všechny kmitočty</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">stejně dlouho. A protože
+		<span style="background-color: #FFFF00">fázová charakteristika</span>je 
+		ze skupinového zpoždění dána integrací, je grafem</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">obvodu, který nezpůsobuje lineární 
+		zkreslení, <span style="background-color: #FFFF00">přímka</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">Shrnuto, jakmile není graf fázové 
+		charakteristiky lineární funkcí kmitočtu budicího harmonického signálu,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">způsobuje daný obvod lineární 
+		zkreslení. Jinak řečeno, totéž platí, není-li grafem charakteristiky</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">skupinového zpoždění konstanta (může 
+		být splněno třeba jen v určitém kmitočtovém pásmu).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Důsledek výše napsaného, tedy vliv 
+		lineárního zkreslení, je patrný z obrázku níže.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Příčinou tohoto zkreslení je neideální 
+		tvar všech kmitočtových charakteristik, tedy i modulové.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr31.jpg" width="800" height="508"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">Nelineární, resp. nekonstantní 
+		průběh kmitočtových charakteristik lineárního dynamického obvodu</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">způsobí naznačené tvarové zkreslení 
+		zpracovávaného signálu. To se samozřejmě projeví ve změně</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">velikosti spektrálních čar, nikoliv 
+		však v jejich počtu.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Ideální, tedy nezkreslující, chování 
+		bývá v praxi možné pouze v úzkém pásmu kmitočtů. Jde např.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">o propustné pásmo filtrů. Lineární 
+		zkreslení se neprojeví, resp. projeví minimálně, obsahuje-li budicí</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">signál spektrální složky v takovém 
+		pásmu kmitočtů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Poznamenejme, že v některých 
+		praktických aplikacích je třeba nevhodný průběh charakteristiky</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">skupinového zpoždění korigovat. K tomu 
+		mohou posloužit některé techniky, např. použití</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">tzv.
+		<span style="background-color: #00FFFF">fázového korektoru, zpravidla 
+		fázovacího článku</span> v kaskádě s dynamickým obvodem.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Fázovací článek pak nemění modulovou 
+		charakteristiku a koriguje fázovou (skupinové zpoždění).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Na obrázku níže vidíte pracoviště pro 
+		automatizované měření kmitočtových charakteristik.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Základem je měřicí přístroj -
+		<span style="background-color: #FFFF00">obvodový analyzátor</span>. K 
+		němu je připojen měřený obvod. Měření probíhá</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">autonomně podle nastavených rozsahů. 
+		Naměřené charakteristiky jsou pak přeneseny do notebooku</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">pro další zpracování nebo prezentaci. V 
+		daném případě jde o analyzátor HP4195A (dnes firma Agilent).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right"><font color="#0000FF" face="Arial">
+		<span style="font-size: 13pt; font-weight: 700; font-style: italic; text-decoration: underline">
+		<a target="_blank" href="http://www.home.agilent.com/agilent/home.jspx">
+		http://www.home.agilent.com/agilent/home.jspx</a></span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr13.jpg" width="800" height="600"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table34" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="2._Analytický_výpočet_kmitočtových_charakteristik_lineárních_obvodů">2. Analytický výpočet kmitočtových charakteristik lineárních obvodů</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="2.1._Komplexní_(obrazový)_přenos_lineárních_dynamických_obvodů">2.1. 
+		Komplexní (obrazový) přenos lineárních dynamických obvodů</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Základní otázkou je, zda a jak lze kmitočtové charakteristiky odvodit 
+		analyticky (jako vzorce) na základě</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		znalosti schématu. Odpověď zní že ANO.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Podíváte-li se na první obrázek zcela nahoře zjistíte, že pod obvodem je 
+		vztah pro výpočet zesílení,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">avšak 
+		symbol K<sub>U</sub> je zde s tečkou a totéž platí o napětích:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr14.jpg" width="135" height="70"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Tento 
+		vztah budeme nazývat <span style="background-color: #FFFF00">komplexním 
+		přenosem lineárního obvodu</span>. Tečky nad symboly říkají,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">že se 
+		jedná o komplexní čísla, resp. reálnou funkci komplexní proměnné
+		<span style="background-color: #FFFF00">j</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Symboly
+		<img border="0" src="Tema18_Obr/Obr15.jpg" width="91" height="39"> 
+		představují <a target="_blank" href="Tema11.htm">fázory</a> maximálních 
+		hodnot, tedy amplitud harmonických signálů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Naším 
+		cílem nyní je odvodit vztah pro komplexní přenos napětí pro námi výše 
+		zadaný RC obvod.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr16.jpg" width="336" height="166"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pro 
+		výpočet komplexního přenosu (obrazového přenosu) lze využít
+		<a target="_blank" href="Tema04.htm">metodu uzlových napětí</a>, která</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">je 
+		obecnou metodou a lze ji využít pro jakýkoli lineární obvod.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">V 
+		našem případě je to však zbytečné, neboť obvod představuje kmitočtově 
+		závislý nezatížený dělič</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		napětí. Rezistor představuje jednu impedanci, kapacitor druhou podle 
+		obrázku níže:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr17.jpg" width="549" height="182"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pak 
+		podle známého vztahu pro dělič napětí platí:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p><img border="0" src="Tema18_Obr/Obr18.jpg" width="724" height="123"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Komplexní přenos napětí je veličina kmitočtově závislá a je funkcí 
+		komplexní proměnné &quot;j&quot;</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">a 
+		časové konstanty </span><font face="Symbol">t.</font></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Komplexní přenos v sobě skrývá obě kmitočtové charakteristiky. Je však 
+		třeba je z něj &quot;vydolovat&quot;.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Výsledný vztah podrobíme úpravě tak, abychom jej rozložili na reálnou a 
+		imaginární část.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Za tím 
+		účelem vynásobíme výraz zlomkem takto:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr19.jpg" width="609" height="83"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Poslední výraz sice ještě nepředstavuje obě výše zmíněné kmitočtové 
+		charakteristiky, avšak již nyní</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		přináší jistý, poměrně velký přínos pro rozpoznání kmitočtového chování 
+		obvodu.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Nyní 
+		vykreslíme závislost imaginární části posledního výrazu na reálné části, 
+		tedy závislost:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr20.jpg" width="831" height="63"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr21.jpg" width="513" height="282"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Takto 
+		vykreslenou závislost nazýváme <span style="background-color: #FFFF00">
+		hodografem</span>. Jde o křivku, jejímž parametrem je kmitočet</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		vstupního harmonického signálu </span>
+		<span style="font-family: Times New Roman">&#969;. </span><font face="Arial">
+		Vykreslíme-li hodograf pro kmitočty od nuly do nekonečna, získáme</font></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">křivku 
+		typickou pro daný konkrétní obvod. Pro náš RC článek jde o půlkružnici v 
+		dolní polorovině.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Kmitočet se mění od nuly (pravá úvrať) do nekonečna (levá úvrať). Pro 
+		konkrétní kmitočet pak získáme</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		souřadnice, ze kterých lze odečíst hodnoty reálné a imaginární částí 
+		komplexního přenosu obvodu.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Výpočet modulu a fáze je pak již jednoduchou záležitostí.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		<span style="background-color: #FFFF00">Hodograf tak v sobě skrývá obě 
+		naše kmitočtové charakteristiky, sám je však pro praxi méně vhodný</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pro 
+		získání dvou kmitočtových charakteristik je třeba náš výraz pro 
+		komplexní přenos ještě upravit tak,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		abychom získali modul a argument (fázi) komplexního přenosu. K tomu 
+		využijeme
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Pythagoras">
+		Pythagorovu větu</a></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">a 
+		funkci <i>arctg</i> (analogie s
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Komplexní_čísla">
+		komplexními čísly</a>).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr22.jpg" width="727" height="172"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Agrument funkce <i>arctg</i> je získán jako podíl imaginární části ku 
+		reálné a vykrácení.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Poslední výraz je již konečný a představuje komplexní přenos lineárního 
+		obvodu upravený tak, aby bylo</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">možné 
+		počítat a kreslit obě kmitočtové charakteristiky.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pro 
+		modulovou a fázovou kmitočtovou charakteristiku platí:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr23.jpg" width="747" height="161"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Následující obrázek ukazuje výpočet a kreslení obou kmitočtových 
+		charakteristik v programu MATLAB.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Svislé 
+		osy mají jednotky <span lang="en-us">[dB] a [rad]</span>, vodorovné osy 
+		kmitočtu jsou logaritmické (příkaz <i>semilogx</i>).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr24.jpg" width="606" height="763"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right"><font face="Arial" color="#0000FF">
+		<a target="_blank" href="http://www.humusoft.cz/">
+		<span style="font-size: 13pt; font-weight: 700; font-style: italic; text-decoration: underline">
+		www.humusoft.cz/</span></a><span style="font-style: italic; font-weight: 700; font-size: 13pt">&nbsp;&nbsp;&nbsp;
+		</span>
+		<span style="font-size: 13pt; font-weight: 700; font-style: italic; ">
+		<a target="_blank" href="http://www.mathworks.com"><u>www.mathworks.com</u></a></span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Kmitočtové charakteristiky se tedy dají měřit, simulovat v počítači a 
+		analyticky určit</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		(včetně skupinového zpoždění).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Zopakujme, že jsou definovány pouze pro třídu lineárních obvodů v 
+		harmonickém ustáleném stavu.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<font color="#FF0000"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; text-decoration: underline">POZOR</span></b></span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Rozlišujte, prosím, pečlivě pojem &quot;komplexní přenos&quot; a zesílení. 
+		Zesílení je pouze modulem komplexního</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		přenosu, který však v sobě zahrnuje i fázi a je obecnějším termínem.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table35" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="2.2._Příklady_kmitočtových_charakteristik_vybraných_lineárních_dynamických_obvodů">2.2. Příklady kmitočtových charakteristik vybraných lineárních dynamických obvodů</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Níže 
+		uvádíme několik vybraných lineárních dynamických obvodů 1. a 2. řádu 
+		spolu s jejich komplexním</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		přenosem a kmitočtovými charakteristikami. U komplexního přenosu je vždy 
+		část před exponenciálou</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		modulem, agrument exponenciály je pak fází (mimo imaginární jednotku 
+		&quot;j&quot;). Kmitočtové charakteristiky</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">jsou 
+		uváděny v pořadí shora dolů: modulová, fázová a skupinové zpoždění. U 
+		prvního CR obvodu</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		uvádíme zdrojový text systému MATLAB, vedoucí k vykreslení grafů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Je 
+		třeba upozornit, že grafické průběhy jsou vždy kresleny pro konkrétní 
+		hodnoty parametrů R, L a C</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">a pro 
+		konkrétní rozsah kmitočtové osy.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Lze 
+		jen doporučit vyzkoušet si kreslení kmitočtových charakteristik např. s 
+		využitím programů Micro-Cap,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">MATLAB 
+		nebo SNAP pro různé hodnoty parametrů (R,L a C).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Jak 
+		jsme uvedli, program SNAP je k dispozici zdarma na adrese
+		<a target="_blank" href="http://snap.webpark.cz/index.html">
+		http://snap.webpark.cz/index.html</a> ,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		program Micro-Cap má zdarma dostupnou verzi na adrese
+		<a target="_blank" href="http://www.spectrum-soft.com/demoform.shtm">
+		http://www.spectrum-soft.com/demoform.shtm</a></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Systém 
+		MATLAB je pouze za peníze, prodejce v ČR však poskytuje zajímavé slevy 
+		pro školy, <a target="_blank" href="http://www.humusoft.cz/">zde</a>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr25.jpg" width="809" height="574"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr26.jpg" width="799" height="572"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr27.jpg" width="786" height="568"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00">U obvodů 1. 
+		řádu si všimněte několika zajímavostí u rovnic a průběhů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Především přemýšlejte o mezním kmitočtu ve smyslu výše uvedeného a o 
+		typu filtrů</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">(dolní 
+		propust DP, horní propust HP).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Dále 
+		je zajímavé posunutí fázové charakteristiky u HP nahoru. A také, že 
+		hodnota skupinového zpoždění</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">pro 
+		nízké kmitočty se blíží hodnotě časové konstanty (</span><span style="font-family: Symbol">t</span><span style="font-family: Arial" lang="en-us">=RC 
+		nebo </span><span style="font-family: Symbol">t</span><span style="font-family: Arial" lang="en-us">=L/R).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Největší změnu fáze lze vytvořit o </span>
+		<span style="font-family: Times New Roman">&#960;/2 </span>
+		<span style="font-family: Arial" lang="en-us">[rad]</span><span style="font-family: Arial"> 
+		a pokles, resp. nárůst modulové charakteristiky je
+		<span style="background-color: #00FFFF">-20dB/dek</span>,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">resp.
+		<span style="background-color: #00FFFF">+20dB/dek</span>, kde dek 
+		rozumíme dekádu, tedy desetinásobný nárůst kmitočtu. Jde o nejmenší</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">možný 
+		pokles, resp. nárůst (nejmenší možný řád obvodů).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema18_Obr/Obr28.jpg" width="840" height="637"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="3._Shrnutí">3. Shrnutí</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&nbsp;&#9679;&nbsp;</span></b><span style="font-weight: 700"><font face="Arial" style="font-size: 13pt" color="#0000FF">obvodové 
+		funkce lineárních dynamických obvodů závisejí na kmitočtu budicího 
+		harmonického signálu,</font></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&nbsp;&#9679; 
+		jde zejména o modulovou a fázovou kmitočtovou charakteristiku a 
+		skupinové zpoždění,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&nbsp;&#9679; 
+		jejich nelineární, resp. nekonstantní průběh je příčinou tzv. lineárního 
+		zkreslení dynamických obvodů,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&nbsp;&#9679; 
+		kmitočtové charakteristiky lze měřit, simulovat a analyticky odvodit,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&nbsp;&#9679; 
+		kmitočtové charakteristiky lineárních dynamických obvodů jsou definovány 
+		pro harmonický ustálený</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp;&nbsp; stav (HUS) obvodu, 
+		podrobněji <span style="background-color: #FFFF00">
+		<a target="_blank" href="Tema11.htm">zde</a></span>.</span></b></span></p></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2">
+		<span style="font-size: 16pt; color: #0000FF">
+		<a name="4._Doporučená_literatura"><b>
+		<span style="font-family: Comic Sans MS">4</span></b></a></span><a name="4._Doporučená_literatura"><span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue"><b>. 
+		Doporučená literatura</b></span></a></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Biolek, D. a kol. Úvod do 
+		elektrotechniky. Skriptum S-13. Vojenská akademie v Brně, 1997.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Biolek, D. a kol. 
+		Elektronické obvody I. Učebnice. Univerzita obrany, Brno 2006. ISBN 
+		80-7231-169-7.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Biolek, D. Řešíme 
+		elektronické obvody. BEN-technická literatura, Praha 2004. ISBN 
+		80-7300-125-X.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Přehled skript a učebnic 
+		souhrnně
+		<a target="_blank" href="http://user.unob.cz/zaplatilek/skripta.htm">zde</a>.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	</table>
+
+</body>
+
+</html>

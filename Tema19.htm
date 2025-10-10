@@ -1,0 +1,3163 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="cs">
+<meta charset="UTF-8">
+
+
+
+<title>Nová stránka 1</title>
+</head>
+
+<body background="obr/1.jpg"  bgcolor="#E6E6E6">
+
+<table border="0" width="886" id="table1" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="4">
+		<p class="MsoNormal" align="center"><font size="5" color="#FF0000"><b>
+		<span style="font-family: Comic Sans MS">Harmonická Fourierova analýza 
+		signálů - spektra periodických signálů</span></b></font></td>
+	</tr>
+	<tr>
+		<td nowrap colspan="4">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="13%"><u>
+		<font face="Comic Sans MS" color="#0000FF" size="4">Obsah:</font></u></td>
+		<td nowrap width="80%" colspan="3">
+		<font face="Comic Sans MS" size="4">
+		<a href="#1._Rozklad_bílého_světla_na_duhu_-_barevné_spektrum">Rozklad 
+		bílého světla na duhu - barevné spektrum</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="80%" colspan="3">
+		<font face="Comic Sans MS" size="4">
+		<a href="#2._Rozklad_periodického_signálu_na_spektrum_-_Fourierova_řada">
+		Rozklad periodického signálu na spektrum - 
+		Fourierova řada</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="75%" colspan="2"><font face="Comic Sans MS">
+		<font color="#800000">-
+		<a href="#2.1._Pojem_spektrum"><font color="#800000">pojem spektrum</font></a></font></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="75%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#2.2._Fourierova_řada_a_její_tvary"><font color="#800000">
+		Fourierova řada a její tvary</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		<font face="Comic Sans MS"><i>- 
+		<a href="#2.2.1_Dirichletovy_podmínky">Dirichletovy podmínky</a></i></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		<font face="Comic Sans MS"><i>- 
+		<a href="#2.2.2_Některé_vlastnosti_Fourierovy_řady">některé vlastnosti 
+		Fourierovy řady</a></i></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		<font face="Comic Sans MS"><i>- 
+		<a href="#2.2.3_Parsevalův_teorém_pro_periodické_signály">Parsevalův 
+		teorém pro periodické signály</a></i></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="80%" colspan="2">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#2.3._Použití_Fourierovy_řady"><font color="#800000">použití 
+		Fourierovy řady</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%" height="30">&nbsp;</td>
+		<td nowrap width="5%" height="30">&nbsp;</td>
+		<td nowrap width="80%" colspan="2" height="30">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#2.4._Příklady_jednodušších_periodických_signálů_a_jejich_spekter">
+		<font color="#800000">příklady jednodušších periodických signálů a 
+		jejich spekter</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%" height="30">&nbsp;</td>
+		<td nowrap width="5%" height="30">&nbsp;</td>
+		<td nowrap width="80%" colspan="2" height="30">
+		<font color="#800000" face="Comic Sans MS">-
+		<a href="#2.5._Další_příklady_periodických_časových_průběhů_a_jejich_spekter">
+		<font color="#800000">další příklady periodických časových průběhů a 
+		jejich spekter</font></a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="80%" colspan="3">
+		<font face="Comic Sans MS" size="4"><a href="#3._Doporučená_literatura">Doporučená literatura</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="13%">&nbsp;</td>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="4%">
+		&nbsp;</td>
+		<td nowrap width="76%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0">&nbsp;</p>
+<table border="0" width="886" id="table18" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="1._Rozklad_bílého_světla_na_duhu_-_barevné_spektrum">1. </a> </span></b><span style="font-size: 16pt; color: #0000FF"><b>
+		<span style="font-family: Comic Sans MS">
+		<a name="1._Rozklad_bílého_světla_na_duhu_-_barevné_spektrum">Rozklad bílého světla na duhu - 
+		barevné spektrum</a></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Barevnou duhu jistě znáte. Vzniká tím, že se bílé světlo láme na kapkách 
+		vody za deště. Kapka vody</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">má 
+		větší index lomu, než vzduch a tento index lomu je různý pro různé 
+		vlnové délky (barvy) světla.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<img border="0" src="Tema19_Obr/Obr01.jpg" width="442" height="310"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pro 
+		každou barvu světla je index lomu na kapce vody jiný. Proto se různé 
+		barvy lámou pod jiným úhlem</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">a 
+		proto máme vizuální vjem různých barev, ve které se bílé světlo 
+		rozložilo.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Duha 
+		má celkem 7 různých barev od červené (nejvyšší vlnová délka, nejnižší 
+		kmitočet) až po fialovou</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		(nejkratší vlnová délka, nejvyšší kmitočet). Těchto 7 barev duhy vidíme. 
+		Další složky světla mimo uvedený</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		barevný rozsah již očima nejsou viditelné.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<img border="0" src="Tema19_Obr/Obr02.jpg" width="800" height="152"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Máme 
+		tedy dvojici <span style="background-color: #FFFF00">bílé světlo - 
+		barevná duha</span>. Můžeme tedy říci, že barevná duha vzniká rozkladem</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">bílého 
+		světla např. na kapce deště. </span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Každá 
+		barva světla má svou typickou vlnovou délku, danou známým vztahem:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<img border="0" src="Tema19_Obr/Obr03.jpg" width="183" height="75"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		kde symbol <i>f</i> znamená kmitočet a koeficient 300 udává přibližnou rychlost světla ve vakuu 3.10<sup>8</sup> 
+		ms<sup>-1</sup>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Tak 
+		vlastně pomalu přecházíme k tomu, že máme na jedné straně bílé světlo, 
+		na straně druhé jednotlivé</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		barevné složky, rozlišené kmitočtem. Říkáme, že duha tvoří barevné
+		<span style="background-color: #FFFF00">spektrum bílého difúzního světla</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pod 
+		pojmem spektrum tedy budeme chápat složky bílého světla, rozlišené svým 
+		kmitočtem (barvou)</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Rozklad bílého světla na barevné spektrum mohou vytvořit zmíněné kapky 
+		deště, ale také např. skleněný</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		hranol. Zde se opět využívá rozdílného lomu každé barevné složky 
+		(kmitočtu) světla.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Hovoříme o rozkladu, nebo <span style="background-color: #FFFF00">
+		spektrální analýze bílého světla</span> (určení jeho dílčích barevných 
+		složek)</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<img border="0" src="Tema19_Obr/Obr04.jpg" width="411" height="257"><font color="#0000FF" style="font-size: 13pt; font-weight: 700; font-style: italic" face="Arial">&nbsp;&nbsp;
+		</font>
+		<font color="#0000FF" style="font-size: 13pt; font-weight: 700; font-style: italic; text-decoration: underline" face="Arial">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Duha">
+		http://cs.wikipedia.org/wiki/Duha</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Dokonce platí i opačný postup, tedy že součtem dílčích 7 barev duhy 
+		lze vytvořit původní bílé světlo.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">V 
+		takovém případě hovoříme o syntéze bílého světla na základě jeho 
+		spektra.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Nyní 
+		si položme otázku. Jak je možné, že když pozorujeme svět za bílého 
+		světla přes zelenou láhev,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">vidíme 
+		všechno zeleně<span lang="en-us">?</span></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Odpověď je jednoduchá. Zelené sklo propustí k našim očím pouze jednu - 
+		zelenu složku barevného</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		spektra světla. <span style="background-color: #00FFFF">Láhev tak působí 
+		jako optický filtr - vybere jen jednu barvu, tedy jeden kmitočet</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Tím, 
+		že známe barevné spektrum světla umíme uvedený jev snadno vysvětlit. Bez 
+		toho by to šlo jen velmi</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">těžce, 
+		či vůbec ne. Tohoto efektu se hojně využívá např. ve
+		<span style="background-color: #00FF00">fotografické technice</span>:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<img border="0" src="Tema19_Obr/Obr05.jpg" width="793" height="214"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<p align="right"><u><i><b>
+		<font color="#0000FF" face="Arial" style="font-size: 13pt">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Fotografický_filtr">
+		http://cs.wikipedia.org/wiki/Fotografický_filtr</a></font></b></i></u></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		<span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00">Shrnuto, 
+		spektrem budeme rozumět rozklad světla do spektrálních složek, které se 
+		liší svým kmitočtem.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="93%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table29" style="border-collapse: collapse">
+	<tr>
+		<td nowrap colspan="2"><b>
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue">
+		<a name="2._Rozklad_periodického_signálu_na_spektrum_-_Fourierova_řada">2. 
+		</a> </span></b><span style="font-size: 16pt; color: #0000FF"><b>
+		<span style="font-family: Comic Sans MS">
+		<a name="2._Rozklad_periodického_signálu_na_spektrum_-_Fourierova_řada">Rozklad periodického signálu na 
+		spektrum - Fourierova řada</a></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="2.1._Pojem_spektrum">2.1. 
+		Pojem spektrum</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Na 
+		základě analogie s rozkladem bílého světla vzniká myšlenka pokusit se 
+		rozložit v principu</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		jakýkoliv periodický signál na spektrum - tedy složky rozlišené podle 
+		kmitočtu.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Autorem podobných úvah byl zřejmě jako 
+		první francouzský lékař a matematik</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		<span style="background-color: #00FFFF">Josepf Fourier </span>
+		(1768-1830). Zabýval se, mimo jiné, vedením tepla a řešením parciálních 
+		diferenciálních</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		rovnic. Stál před problémem, jak pracovat s periodickými funkcemi. Jeho 
+		snahou bylo zjednodušit</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">jejich 
+		zápis tak, aby se rovnice s nimi staly snáze řešitelnými. </span></b>
+		</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<p align="right">
+		<font face="Arial" style="font-size: 13pt; font-weight: 700; font-style: italic; text-decoration: underline" color="#0000FF">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Fourier">
+		http://cs.wikipedia.org/wiki/Fourier</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%" bgcolor="#FFFF00">
+		<font color="#0000FF"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Výsledkem Fourierových snah byla úvaha 
+		zapsat periodickou funkci (signál) jako součet nekonečného</span></b></span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%" bgcolor="#FFFF00">
+		<font color="#0000FF"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">počtu goniometrických funkcí sinus a 
+		kosinus.</span></b></span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="88%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Tato 
+		úvaha se ukázala oprávněnou a vedla k tzv.
+		<span style="background-color: #00FF00">harmonické Fourierově analýze</span> 
+		a k pojmu</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		<span style="background-color: #00FF00">Fourierova řada</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">My si zde zavedeme Fourierovu řadu 
+		nejprve spíše intuitivně.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Na obrázku níže vidíte součet dvou 
+		harmonických signálů. Prvním je stejnosměrná složka (konstanta)</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">o velikosti U<sub>0</sub>=0,4V. Druhým 
+		je kosinový průběh s amplutdou U<sub>1</sub>=0,605V, počáteční fází
+		</span><font face="Symbol">j</font><span style="font-family: Arial"><sub>1</sub>=0rad 
+		a </span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">kmitočtem f<sub>1</sub>=1kHz. 
+		Stejnosměrná složba je brána jako zvláštní případ harmonického signálu</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">s nulovým kmitočtem. Oba tyto signály 
+		jsou kresleny černě.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Červený průběh je součet obou dílčích.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Celý obrázek je 3D, kde druhou osou 
+		nezávisle proměnnou je kmitočet obou dílčích složek.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Všimněte si těchto zajímavostí:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">
+		&#9679;&nbsp;kmitočet červeného časového průběhu (součet dílčích složek) je totožný 
+		s kmitočtem harmonického</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; signálu s pořadovým 
+		indexem 1,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		podíváte-li se na 3D obrázek zprava, tedy do roviny t=0<span lang="en-us"> 
+		[s]</span>, uvidíte jen dvě čáry,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		tyto čáry zakrelseny do zvláštního obrázku tvoří tzv. amplitudové 
+		spektrum červeného průběhu,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; neboť tyto čáry jsou 
+		vlastně amplitudy obou složek<span lang="en-us">;</span> nezávisle 
+		proměnnou je zde kmitočet,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		fázové spektrum pak doplňuje počáteční fáze obou dílčích harmonických 
+		signálů (složek),</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		je-li stejnosměrná složka kladná, má počáteční fázi 0<span lang="en-us"> 
+		[</span>rad<span lang="en-us">]</span>, je-li záporná pak </span>
+		<font face="Times New Roman">
+		<span style="font-size: 13.0pt; color: #0000FF">&#960; <span lang="en-us">[</span></span></font><span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">rad<span lang="en-us">]</span>,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		oba 2D grafy tvoří úplné spektrum červeného časového průběhu,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		jednotlivé čáry nazýváme spektrálními čarami nebo spektrálními složkami 
+		signálu.</span></b></p></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">Spektrum periodického signálu je 
+		tedy čarové (diskrétní). Spektrální čáry jsou rozlišeny podle kmitočtu.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">Protože amplituda harmonického 
+		signálu souvisí s jeho energií, představuje amplitudové spektrum</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">kmitočtové rozložení energie 
+		signálu.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">První spektrální čára pro f<sub>0</sub>=0 
+		[Hz] představuje střední hodnotu červeného průběhu U<sub>0</sub>=0,4V.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">V pořadí druhá spektrální čára má ve 
+		spektru stejný kmitočet, jako červený časový průběh. Bývá často</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">zkráceně nazývána &quot;první 
+		harmonickou&quot;.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr06.jpg" width="719" height="776"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Jistě si umíte představit, jaké změny 
+		červeného časového průběhu budou vyvolány při změnách</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">velikosti (amplitudy) a počáteční fáze 
+		spektrálních čar:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Zopakujme nyní výše uvedené obrázky, 
+		avšak zvýšíme počet spektrálních čar na N=3.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Půjde tedy o stejnosměrnou složku 
+		(střední hodnotu) a dva harmonické signály.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Je zajímavé, že kmitočet toho nově 
+		přidaného s pořadovým indexem 3 je dvojnásobný, než u indexu 2.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr07.jpg" width="748" height="604"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Výsledný součet tří složek je již 
+		signálem neharmonických (není tvaru sinus nebo kosinus).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Rovnici se součtem můžeme formálně 
+		přepsat s využitím sumy, kde jsou jistě jasné významy symbolů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Právě 
+		žlutě podbarvená rovnice vyjadřuje, že periodický neharmonický signál 
+		může být rozložen</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">do signálů harmonických, jejichž 
+		kmitočet je vždy k-násobný.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Výše uvedený obrázek nyní doplníme o 
+		úplné spektrum:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr08.jpg" width="525" height="570"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Do tabulky jsme přehledně zapsali 
+		kmitočet složek, jejich amplitudu a počáteční fázi.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Pak je kreslení spektra již snadnou 
+		záležitostí.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Na dalším obrázku vidíte opět výsledný 
+		červený časový průběh, jež vznikl součtem již 10 dílčích</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">složek (střední hodnota + 9 
+		harmonických signálů) spolu s úplným spektrem.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr09.jpg" width="522" height="879"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Je zřejmé, že výsledný časový průběh je 
+		již silně neharmonický.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Protože vznik součtem dílčích 
+		spektrálních čar, lze tento součet opět zapsat symbolicky takto:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr10.jpg" width="471" height="79"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Pokud 
+		bychom pokračovali dále ve zvyšování počtu dílčích složek (čar), blížil 
+		by se výsledný časový</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">průběh více ideálnímu periodickému 
+		obdélníkovému průběhu. V ideálním případě by počet spektrálních</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">čar však musel být nekonečný 
+		(teoretický předpoklad).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Uvedený princip rozkladu periodického 
+		signálu na harmonické složky má v teorii i praxi velké dopady.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Představte si, že obdélníkový signál s 
+		kmitočtem f<sub>1</sub>=1kHz projde koaxiálním kabelem (či jiným 
+		přenosovým</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">kanálem), jehož maximální šířka pásma 
+		je 5kHz. To znamená, že všechny složky spektra nad tímto</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">kmitočtem kabel nepřenese (resp. hodně 
+		potlačí). To ale znamená, že průchodem kabelem dojde</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%" height="26">&nbsp;</td>
+		<td nowrap width="87%" height="26"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">k potlačení vyšších harmonických složek 
+		(od 6. výše). To způsobí, že na výstupu bude časový průběh</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">složen jen z 5 spektrálních složek, 
+		namísto původního velkého počtu, viz. obrázek níže.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr11.jpg" width="800" height="356"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">
+		<span style="background-color: #FFFF00">Omezením spektra dojde ke 
+		zkreslení tvaru časového průběhu a naopak</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Chceme-li zabránit zkreslení, je třeba 
+		vybrat přenosový kanál (trasu) s vhodnými kmitočtovými</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">vlastnostmi. Zde je vidět souvislost 
+		mezi tvarem <span style="background-color: #00FF00">kmitočtové 
+		charakteristiky obvodu</span> a <span style="background-color: #FFFF00">
+		spektry signálů</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Uvedený jev nemusí však být vždy jevem 
+		nechtěným. V praxi se používají tzv.
+		<span style="background-color: #FFFF00">kmitočtové filtry</span>,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">u nichž je právě schopnost potlačovat 
+		definované pásmo kmitočtů jevem žádaným</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">(např. odstranění rušení).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right"><u><i><b>
+		<font color="#0000FF" style="font-size: 13pt" face="Arial">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Filtr_(zpracování_signálu)">
+		http://cs.wikipedia.org/wiki/Filtr_(zpracování_signálu)</a></font></b></i></u></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF"><font color="#0000FF">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Kdy se 
+		znalost spektra hodí<span lang="en-us">?</span></span></b></span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">
+		&#9679;&nbsp;když potřebujeme vysvětlit, proč periodický signál s 
+		kmitočtem 10kHz ruší na kmitočtu 100kHz</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; (ruší jedna z vyšších 
+		harmonických složek spektra-spektrální čára),</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		když potřebujeme odstranit rušení, šum apod.,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		při konstrukci kmitočtových filtrů (lineární obvody) a tvarovačů signálů 
+		(nelineární obvody),</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		při měření nebo výpočtu tzv. harmonického zkreslení obvodů (obohacení 
+		spektra nelineárními obvody),</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		při práci s modulovanými signály a přenosem dat obecně,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		při ladění a používání přijímačů elektromagnetických vln (rozhlas, TV, 
+		GSM aj.)<span lang="en-us">;</span> vlastně laděním</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; </span></b></span><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">
+		přijímače vybíráme ve spektru všech stanic tu námi zvolenou (vhodným 
+		laděným kmitočtovým filtrem),</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		atd., atd.</span></b></p>
+		</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Při práci s elektrickými obvody a 
+		signály je často vhodné mít k dispozici jak časové průběhy signálů,</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">tak jejich spektra.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Pro určení spektra signálu se vyrábějí 
+		buďto speciální spektrální analyzátory anebo je tato možnost</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">implementována jako doplněk osciloskopů 
+		a obvodových analyzátorů.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right"><font face="Arial" color="#0000FF">
+		<span style="font-size: 13pt; font-weight: 700; font-style: italic; text-decoration: underline">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Osciloskop">
+		http://cs.wikipedia.org/wiki/Osciloskop </a></span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">
+		<span style="background-color: #FFFF00">V případě digitálního zpracování 
+		signálů (DSP)</span> je k dispozici výpočet spektra ve formě algoritmu
+		<span style="background-color: #FFFF00">DFT</span></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">(Discrete Fourier Transform), resp. 
+		jeho rychlé varianty <span style="background-color: #FFFF00">FFT</span> 
+		(Fast Fourier Transform). Na základě</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">znalosti hodnot vzorků signálu (čísel) 
+		lze spektrum snadno vypočítat a zobrazit.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00">Dílčí 
+		shrnutí:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">
+		&#9679;&nbsp;budeme si zvykat na to, že ke každému periodickému signálu 
+		je velmi často vhodné mít k dispozici</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; jeho spektrum (amplitudové 
+		a fázové),</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		spektrum je tvořeno řadou harmonických signálů, které se ve spektru 
+		znázorňují jako spektrální</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; čáry, které jsou od sebe 
+		vzdáleny o kmitočet časového průběhu,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		spektrální čáry s pořadovým číslem 1 (na nulovém kmitočtu) má význam 
+		střední hodnoty časového</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; průběhu,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		spektrální čáry s pořadovým číslem 2 má kmitočet shodný s kmitočtem 
+		časového průběhu a je nazývána</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; &quot;první harmonickou&quot;,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		součtem všech spektrálních čar, tedy všech harmonických signálů, 
+		obdržíme časový průběh,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		u neharmonických periodických signálů hraje roli počet spektrálních čar 
+		s ohledem na tvar časového</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; průběhu</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		změna ve spektru se projeví ve změně tvaru časového průběhu a naopak,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		je důležité naučit se rozumět souvislostem mezi časovým průběhem a jeho 
+		spektrem,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		znalost spektra je důležitá v mnoha oborech, zejména v telekomunikační 
+		technice.</span></b></p></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="2.2._Fourierova_řada_a_její_tvary">2.2. 
+		Fourierova řada a její tvary</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Zopakujme si analytický zápis součtu 
+		harmonických signálů, uvedený výše.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr12.jpg" width="642" height="634"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%" height="26">&nbsp;</td>
+		<td nowrap width="87%" height="26">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr13.jpg" width="800" height="563"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">V obou 
+		případech vyjadřuje žlutě podbarvená rovnice se sumou fakt, že časový 
+		průběh byl získán</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">sečtením všech harmonických signálů 
+		včetně stejnosměrné složky (střední hodnoty).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Jak by to dopadlo, kdybychom sečetli 
+		nekonečné množství spektrálních čar<span lang="en-us">?</span></span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">S 
+		jistým zjednodušením podle obrázku níže.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr14.jpg" width="561" height="397"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Pro dokonalý (ideální) tvar 
+		obdélníkových pulzů by bylo třeba sečíst nekonečné množství spektrálních</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">čar. V technické praxi však tyto 
+		dokonalé tvary jsou sice chtěné, ale ne vždy. Pak je konečný počet</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">čar stejně tak v pořádku. Navíc, vždy 
+		jsme omezeni konečným, byť někdy poměrně vysokým počtem</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">spektrálních složek.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Nás však nyní zajímá onen posledně 
+		uvedený žlutě podbarvený vztah.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Ten nám říká něco o náhradě 
+		(aproximaci) periodického signálu v principu libovolného tvaru</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">harmonickými signály kosinus.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Tyto harmonické funkce budeme nazývat 
+		základními (bázovými) funkcemi.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial; background-color: #FFFF00">Uvedený 
+		vztah je tedy aproximací - náhradou.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Je samozřejmě nutné znát konkrétní 
+		hodnoty amplitud a počátečních fází spektrálních čar pro každý</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">tvar periodického signálu (obdélník, 
+		trojúhelník, pila, lichoběžník apod.).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Přepišme formálně ještě jednou poslední 
+		vztah:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr15.jpg" width="618" height="87"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Uvedený vztah nazýváme Fourierovou řadou (<span style="background-color: #00FFFF">varianta s kosinovými členy</span>). 
+		Symboly C<sub>0</sub> a C<sub>k</sub> jsou</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">tzv. Fourierovy koeficienty. Jejich 
+		souvislost s hodnotami střední hodnoty a amplitud jsou uvedeny.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Vy už jistě budete tomuto vztahu 
+		rozumět na základě výše probrané látky.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">Fourierova řada nám ukazuje, že 
+		periodický signál s<sub>p</sub>(t) lze přibližně nahradit součtem 
+		střední hodnoty</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#FFFF00"><span style="font-size: 13pt">
+		<b><span style="font-family: Arial">a řady harmonických signálů s 
+		vhodnou amplitudou a počáteční fází.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Uvedený tvar Fourierovy řady není jediný. A to proto, že existuje trojí 
+		základní způsob matematického</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">modelování harmonického signálu, viz.
+		<a target="_blank" href="Tema05.htm">zde</a>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Platí-li tedy:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr16.jpg" width="356" height="36"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">pak výše uvedená Fourierova řada lze 
+		přepsat do jiného, tzv. <span style="background-color: #00FFFF">
+		trigonometrického tvaru</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr17.jpg" width="429" height="71"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">koeficienty lze mezi sebou přepočítat:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr18.jpg" width="609" height="135"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">Třetím 
+		tvarem Fourierovy řady je řada v tzv.
+		<span style="background-color: #00FFFF">komplexním nebo exponenciálním 
+		tvaru</span>.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Tento tvar je dán modelem harmonického 
+		signálu:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr19.jpg" width="474" height="125"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Fourierovu řadu pak můžeme zapsat 
+		takto:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr20.jpg" width="689" height="73"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">
+		<span style="background-color: #FFFF00">Existují tedy celkem tři tvary 
+		jedné jediné Fourierovy řady</span>. Praktický je ten první (s 
+		kosinovými členy),</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">další dva jsou teoretické, avšak rovněž 
+		důležité. Za zmínku stojí dolní meze použitých sum.</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Zatímco první dva tvary mají tyto meze 
+		od 1, poslední od -</span><span style="font-family: Times New Roman">&#8734;.
+		</span><font face="Arial">To znamená, že bude ukazovat spektrum</font></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">i pro záporné kmitočty (teorie). 
+		Velikosti spektrálních čar modulu vyjdou poloviční (zachování energie).</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">Zopakujme si souhrnně všechny tři tvary Fourierovy řady včetně vztahů pro koeficienty:</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr21.jpg" width="800" height="211"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr22.jpg" width="800" height="280"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><span style="font-size: 13pt"><b>
+		<span style="font-family: Arial">T<sub>1</sub> a </span>
+		<span style="font-family: Times New Roman">&#969;<sub>1</sub> </span>
+		<font face="Arial">ukazují na periodu, resp. kruhový kmitočet časového 
+		průběhu periodického signálu.</font></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		Budete-li měřit spektrum periodického signálu pomocí spektrálního 
+		analyzátoru, obdržíte zpravidla</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt"><b><span style="font-family: Arial">
+		spektrální čáry, odpovídající Fourierově řadě s kosinovými členy. Mají 
+		totiž přímý fyzikální smysl</span></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<font face="Arial"><span style="font-size: 13pt; font-weight: 700">
+		amplitud, resp. počátečních fází harmonických složek spektra.</span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Další dva tvary Fourierovy 
+		řady mají spíše teoretický význam.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FF00">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Všimněte si levého sloupce 
+		druhé tabulky výše. Jsou zde popsány vztahy pro určení (výpočet)</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FF00">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">koeficientů Fourierovy řady. 
+		K tomu je třeba znát analyticky daný periodický signál (funkci).</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2"><span style="font-weight: 700">
+		<font face="Comic Sans MS" style="font-size: 13pt" color="#FF0000">
+		<a name="2.2.1_Dirichletovy_podmínky">2</a></font></span><a name="2.2.1_Dirichletovy_podmínky"><font face="Comic Sans MS" color="#FF0000" style="font-size: 13pt; font-weight: 700">.2.1 
+		Dirichletovy podmínky</font></a></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt; font-family: Arial; font-weight: 700">Aby 
+		mohla být periodická funkce (signál) vyjádřena Fourierovou řadou, tedy 
+		součtem nekonečného</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt; font-family: Arial; font-weight: 700">
+		počtu harmonických funkcí, <span style="background-color: #FFFF00">musí 
+		tato řada konvergovat</span>.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt; font-family: Arial; font-weight: 700">
+		Konvergence, tedy konečně velký součet všech členů, bude zajištěna 
+		tehdy, bude-li periodický</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt; font-family: Arial; font-weight: 700">
+		časový průběh (funkce) jistým způsobem omezen, tedy bude-li splňovat 
+		jisté podmínky,</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt; font-family: Arial; font-weight: 700">tzv.
+		<span style="background-color: #FFFF00"><i>Dirichletovy podmínky</i></span>. 
+		Jde o tato omezení:</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679;&nbsp;v 
+		rámci své periody, tedy v časovém intervalu <span lang="en-us">&lt;0,T<sub>1</sub>&gt;,</span> 
+		je funkcí ohraničenou,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		</span></b><font color="#0000FF">
+		<span style="font-size: 13pt; font-family: Arial; font-weight: 700">
+		v&nbsp;tomtéž intervalu má funkce konečný počet bodů nespojitosti prvního 
+		druhu<span lang="en-us"> ( </span>zjednodušeně <span lang="en-us">skoky),</span></span></font></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		opět v rámci své periody má funkce (signál) konečný počet lokálních 
+		extrémů, je po částech</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; monotónní a po částech 
+		hladká.</span></b></span></p></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Je třeba poznamenat, že 
+		všechny běžně používané technické signály (modely) Dirichletovy podmínky</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">splňují.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right">
+		<font face="Arial" style="font-size: 13pt; font-weight: 700" color="#0000FF">
+		<a target="_blank" href="http://cs.wikipedia.org/wiki/Dirichletovy_podmínky">
+		http://cs.wikipedia.org/wiki/Dirichletovy_podmínky</a></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2"><span style="font-weight: 700">
+		<font face="Comic Sans MS" style="font-size: 13pt" color="#FF0000">
+		<a name="2.2.2_Některé_vlastnosti_Fourierovy_řady">2</a></font></span><a name="2.2.2_Některé_vlastnosti_Fourierovy_řady"><font face="Comic Sans MS" color="#FF0000" style="font-size: 13pt; font-weight: 700">.2.2 
+		Některé vlastnosti Fourierovy řady</font></a></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Tyto vlastnosti jsou užitečné 
+		pro práci se spektry periodických signálů. Šetří výrazně čas a energii.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr48.jpg" width="768" height="815"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2"><span style="font-weight: 700">
+		<font face="Comic Sans MS" style="font-size: 13pt" color="#FF0000">
+		<a name="2.2.3_Parsevalův_teorém_pro_periodické_signály">2</a></font></span><a name="2.2.3_Parsevalův_teorém_pro_periodické_signály"><font face="Comic Sans MS" color="#FF0000" style="font-size: 13pt; font-weight: 700">.2.3 
+		Parsevalův teorém pro periodické signály</font></a></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt; font-family: Arial; font-weight: 700">
+		Parsevalův teorém dává do souvislostí časový průběh periodického signálu 
+		a jeho spektrum pro možnost</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt; font-family: Arial; font-weight: 700">
+		výpočtu tzv. normovaného středního výkonu viz. <u>
+		<span style="color:blue"><a target="_blank" href="Tema05.htm">zde</a>.</span></u></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr49.jpg" width="590" height="71"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal"><font face="Arial">
+		<span style="font-size: 13pt; font-weight: 700">Střední výkon lze tedy 
+		určit jak z&nbsp;časového průběhu (kvadrát efektivní hodnoty), tak s využitím 
+		koeficientů</span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal"><font face="Arial">
+		<span style="font-size: 13pt; font-weight: 700">Fourierovy řady. Pak je 
+		třeba sečíst teoreticky nekonečný počet koeficientů příslušně 
+		umocněných.</span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal"><font face="Arial">
+		<span style="font-size: 13pt; font-weight: 700">Známe-li spektrum 
+		signálu, může být výpočet na jeho základě někdy mnohem jednodušší.</span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal"><font face="Arial">
+		<span style="font-size: 13pt; font-weight: 700">Bude-li koeficientů 
+		konečný počet, obdržíme výpočtem více či méně přesný
+		<span style="background-color: #FFFF00">odhad skutečného výkonu</span>.</span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right"><font face="Arial" color="#0000FF"><b>
+		<span style="font-size: 13pt">
+		<a target="_blank" href="http://en.wikipedia.org/wiki/Parseval's_theorem">
+		http://en.wikipedia.org/wiki/Parseval's_theorem</a></span></b></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt; background-color: #FFFF00">
+		Příklad:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt; font-family: Arial; font-weight: 700">
+		Vypočtěte efektivní hodnotu a normovaný střední výkon periodického 
+		signálu, vzniklého jednocestným</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		usměrněním harmonického signálu podle obrázku.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Nejprve se půjde o výpočet s využitím Parsevalova teorému, k čemuž 
+		potřebujeme spektrální čáry.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr50.jpg" width="800" height="485"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">Nyní 
+		totéž, ale klasicky na základě znalosti funkce časového průběhu.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr51.jpg" width="805" height="89"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		<span style="background-color: #00FFFF">Výpočet, založený na analytické 
+		funkci časového průběhu je výpočtem přesným</span>, pokud je však možné</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">daný 
+		vztah pro efektivní hodnotu vůbec vypočítat (pro složité časové průběhy 
+		problém).</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Výpočet s využitím Parsevalova teorému je odhadem daných veličin. 
+		Přesnost se zvyšuje s rostoucím</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		počtem spektrálních čar, které máme k dispozici.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="92%" colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="2.3._Použití_Fourierovy_řady">2.3. 
+		Použití Fourierovy řady</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Na obrázku níže je názorně 
+		ukázán postup určení časového průběhu ze známého úplného spektra</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">(zelený směr) a naopak určení 
+		koeficientů Fourierovy řady (FŘ) ze známého časového průběhu.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">My se v této kapitole 
+		zaměříme na žlutý, doposud nediskutovaný směr.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr23.jpg" width="800" height="372"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Nyní nás tedy bude zajímat, jak 
+		pro známý periodický signál (funkci) určit koeficienty Fourierovy řady.</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">K tomu vedou tyto kroky, 
+		resp. podmínky:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679;&nbsp;je 
+		třeba znát periodický signál jako analyticky zadanou funkci (vzorec pro 
+		periodický časový průběh),</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		aplikovat některý ze vztahů pro výpočet koeficientů Fourierovy řady 
+		(tabulka druhá, levý sloupec výše).</span></b></p></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">Vše si ukážeme na příkladě 
+		výpočtu a zakreslení spektra periodického sledu obdélníkových pulzů,</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt">neboť tento tvar signálu a 
+		jeho modifikace jsou v praxi poměrně časté (např. logická 1 a logická 
+		0).</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-weight: 700">
+		<font face="Arial" style="font-size: 13pt; background-color: #FFFF00">
+		Příklad:</font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt; font-family: Arial; font-weight: 700">
+		Vypočtěte prvních 12 složek úplného spektra periodického obdélníkového 
+		signálu podle&nbsp;obrázku.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr24.jpg" width="457" height="222"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Řešení sse estává z několika logických kroků:</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">1. 
+		výběr vztahu pro výpočet koeficientů Fourierovy řady (FŘ),</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">2. 
+		analytické řešení tohoto vztahu - obdržení koeficientů FŘ,</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">3. 
+		analytický výpočet amplitud a počátečních fází harmonických složek 
+		spektra z vypočtených koeficientů,</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">4. 
+		dosazení číselných hodnot ze zadání - obdržení velikostí spektrálních 
+		čas obou částí spektra,</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%" bgcolor="#00FFFF">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">5. 
+		zakreslení spektra.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt; background-color: #00FFFF">
+		Ad 1.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-size: 13pt; font-family: Arial; font-weight: 700">Vyjdeme 
+		ze vztahu pro výpočet komplexních koeficientů z tabulky výše:</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr25.jpg" width="226" height="73"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700"><!--[if gte mso 9]>
+		<span style="font-size: 13pt">Pro časový průběh proudu v rámci jedné 
+		periody můžeme napsat jednoduchý vztah:</span><![endif]--></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr26.jpg" width="85" height="42"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">V 
+		průběhu periody je naší funkcí konstanta I<sub>m. </sub>Časový průběh 
+		proudu je nenulový pouze po dobu</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		trvání pulzu t<sub>s</sub>. Dosazením obdržíme:</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt; background-color: #00FFFF">
+		Ad 2.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr27.jpg" width="800" height="97"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">Zde 
+		by odvození vztahu pro komplexní koeficient Fourierovy řady mohlo 
+		skončit. My jej ale ještě upravíme</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">tak, 
+		aby byl výsledek snáze interpretovatelný.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Platí tzv. Eulerova substituce:</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr28.jpg" width="185" height="70"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Upravíme vztah pro koeficient tak, abychom mohli Eulerovu substituci 
+		použít.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr29.jpg" width="807" height="92"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Výraz jsme rozšířili zlomkem 2/2, abychom ve jmenovateli obdrželi 2.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">Pro 
+		snazší interpretaci se pokusíme získat ve výsledku výraz sin&#945;/&#945;.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr30.jpg" width="635" height="133"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Použili jsme rozšíření zlomkem t<sub>s</sub>/t<sub>s </sub>a substituci 
+		sinc&#945;=sin&#945;/&#945;.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Obdrželi jsme vztah pro komplexní koeficienty Fourierovy řady. Budeme-li 
+		nyní do vztahu dosazovat</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">za 
+		index k postupně čísla 1,2,3, ... budeme dostávat komplexní čísla, z 
+		nichž lze již obdržet amplitudy</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">a 
+		počáteční fáze harmonických složek spektra. Bohužel, vztah nelze využít 
+		pro index k=0 k získání</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		střední hodnoty I<sub>0</sub>, neboť po dosazení k=0 získáme neurčitý 
+		výraz 0/0.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Proto pro určení střední hodnoty využijeme dříve
+		<a target="_blank" href="Tema05.htm">zde</a> uvedený vztah:</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr31.jpg" width="370" height="117"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Vztah pro střední hodnotu již máme. Nyní je třeba určit vztahy pro 
+		výpočet spektrálních čar</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">z 
+		odvozeného koeficientu:</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt; background-color: #00FFFF">
+		Ad 3.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr32.jpg" width="176" height="83"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt; background-color: #00FFFF">
+		Ad 4.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">Nyní 
+		dosadíme číselné hodnoty ze zadání do vztahu pro komplexní koeficienty a 
+		shrneme si vztahy</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">pro 
+		spektrální čáry.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr33.jpg" width="591" height="183"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Posledně zmíněné vztahy pro amplitudy a počáteční fáze použijeme pro 
+		numerické vyčíslení ve formě</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		tabulky. Do vztahu pro komplexní koeficienty budeme dosazovat pořadový 
+		index k=1,2,3, ....</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">a ze 
+		získaných obecně komplexních čísel budeme počítat amplitudy I<sub>k</sub> 
+		a počáteční fáze.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr34.jpg" width="705" height="394"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">U 
+		počátečních fází je třeba zvážit, že koeficienty c<sub>k </sub>nám vyšly 
+		jako reálná čísla. Z toho ovšem plyne, že</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		jejich imaginární část je rovna 0. Proto fázový posuv vychází 
+		nejednoznačný, neboť platí:</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr35.jpg" width="463" height="69"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">Tato 
+		nejednoznačnost počátečních fází plyne z toho, že náš zadaný obdélník 
+		pokládáme za ideální.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt; background-color: #00FFFF">
+		Ad 5.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Barevně vyznačené sloupce v tabulce nyní vyneseme do grafů a získáme tím 
+		úplné kmitočtové</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		spektrum zadaného periodického signálu.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr36.jpg" width="800" height="376"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		<span style="background-color: #00FFFF">Obálka amplitudového spektra</span> 
+		(čárkovaně) je grafem funkce sin&#945;/&#945;, kde &#945;=k</span><font face="Times New Roman"><span style="font-weight: 700; font-size: 13pt">&#969;<sub>1</sub>t<sub>s</sub>/2.</span></font></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Všimněte si, že v amplitudovém spektru vždy určitá čára nabývá hodnoty 
+		0. Kmitočet těchto nulových</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">čar 
+		je svázán se šířkou pulzu a platí pro něj vztah: f<sub>z</sub>=k/t<sub>s</sub>, 
+		kde k=1,2,3, ... .</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%"><font face="Arial">
+		<span style="font-size: 13pt; font-weight: 700; background-color: #00FFFF">
+		Vyčíslíte-li podíl </span></font>
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		<span style="background-color: #00FFFF">T<sub>1</sub>/t<sub>s</sub></span>, 
+		obdržíte v našem případě číslo 5. To nám říká, kolikátá v pořadí bude 
+		spektrální</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">čára 
+		s nulovou velikostí (nepočítá se střední hodnota). </span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		<span style="background-color: #00FFFF">Vzdálenost spektrálních čar</span> 
+		je rovna kmitočtu časového průběhu F<sub>1</sub>=1/T<sub>1</sub>.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">Pro 
+		získání dokonalého tvaru je třeba nekonečného počtu spektrálních čar, 
+		jak uvedeno výše.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">Na 
+		obrázku níže vidíte část obrazovky
+		<span style="background-color: #FFFF00">spektrálního analyzátoru</span> 
+		jako ilustraci k reálným měřením.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right">
+		<img border="0" src="Tema19_Obr/Obr37.jpg" width="640" height="470" align="left"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt; background-color: #FFFF00">
+		Návod na rychlé zakreslení spektra periodických obdélníků bez větších 
+		výpočtů:</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679;&nbsp;předkreslíte 
+		si osy grafů obou částí spektra (amplitudové a fázové),</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		vypočtete vzdálenost spektrálních čar, která je rovna kmitočtu časového 
+		průběh F<sub>1</sub> a na vodorovných</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; osách obou grafů si 
+		uděláte značky kmitočtů od 0, </span></b></span><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">F<sub>1,
+		</sub>2F<sub>1, </sub>3F<sub>1 ....</sub></span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		vypočtete velikost střední hodnoty podle vzorce I<sub>0</sub>=Im.t<sub>s</sub>/T<sub>1</sub> 
+		a zakreslíte ji,</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		dále od ruky načrtnete graf funkce </span></b><font color="#0000FF">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">sin&#945;/&#945;, 
+		na nulovém kmitočtu je obálka dvojnásobná, než střední</span></font></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<font color="#0000FF">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">&nbsp;&nbsp; 
+		hodnota,</span></font></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		nyní určíte, kolikátá spektrální složka amplitudového spektra bude 
+		nulová podle výrazu </span></b><font color="#0000FF">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">T<sub>1</sub>/t<sub>s</sub>,</span></font></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		kreslení spektra fázového je snadné.</span></b></p></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Upozorněme, že hodnota dílčích vrcholů funkce sin&#945;/&#945; poměrně 
+		rychle klesá.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		<span style="background-color: #FFFF00">Vyzkoušejte si práci se spektry</span> 
+		např. na webech (stojí to za to): </span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right"><b>
+		<font face="Arial" style="font-size: 13pt" color="#0000FF">
+		<a target="_blank" href="http://www.falstad.com/fourier/">
+		http://www.falstad.com/fourier/</a></font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		<font color="#0000FF">
+		<a target="_blank" href="http://www.jhu.edu/~signals/fourier2/index.html">
+		http://www.jhu.edu/~signals/fourier2/index.html</a></font></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">Na 
+		obrázcích níže jsou ukázány některé
+		<span style="background-color: #FFFF00">souvislosti tvaru časového 
+		průběhu a spektra</span>.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">Je 
+		třeba vždy vycházet z výše odvozených vztahů. Zejména je vhodné vzít v 
+		úvahu velikost střední</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		hodnoty, polohu nulových spektrálních čar amplitudového spektra a 
+		vzdálenost čar.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr38.jpg" width="811" height="379"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr39.jpg" width="812" height="388"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr40.jpg" width="812" height="390"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr41.jpg" width="801" height="379"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">Z 
+		uvedených souvislostí plynou některé zajímavé a důležité závěry, mající 
+		všeobecnou platnost:</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679;&nbsp;změna 
+		posunutí signálu na svislé ose časového průběhu (nahoru, dolů) se 
+		projeví pouze ve změně</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; střední hodnoty, tedy čáry 
+		na nulovém kmitočtu (první v pořadí)<span lang="en-us">;</span> je-li 
+		střední hodnota kladná,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; má vždy nulovou počáteční 
+		fázi<span lang="en-us">;</span> je-li záporná, je počáteční fáze </span>
+		<span style="font-family: Times New Roman">&#960; </span><font face="Arial">
+		nebo</font><span style="font-family: Times New Roman"> -&#960;</span><font face="Arial"><span lang="en-us"> 
+		;</span> z toho plyne závěr, že</font></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<font face="Arial" style="font-size: 13pt" color="#0000FF">&nbsp;&nbsp; 
+		změna znaménka se projeví jen a pouze ve fázovém spektru,
+		<span style="background-color: #FFFF00">spektrum amplitud nemůže být 
+		záporné</span>,</font></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		změna kmitočtu časového průběhu se projeví ve změně vzdálenosti čar, ale 
+		také ve velikosti čar</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; amplitud,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		změna šířky pulzu obdélníku se projeví ve změně polohy nulových čar 
+		amplitudového spektra a také</span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; ve změně velikosti 
+		amplitudového spektra,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		úzké pulzy s malou střídou vedou na sice nevelké co do amplitud, ale 
+		zato velmi široké spektrum<span lang="en-us">;</span></span></b></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0">
+		<span style="font-size: 13pt; color: #0000FF"><b>
+		<span style="font-family: Arial">&nbsp;&nbsp; to je nevýhodné, neboť je 
+		třeba přenosového kanálu s velkou šířkou propustného pásma,</span></b></span></p>
+		<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0"><b>
+		<span style="font-size: 13.0pt; font-family: Arial; color: #0000FF">&#9679; 
+		jakákoli změna velikosti spektrálních čar se projeví ve zkreslení 
+		časového průběhu a naopak.</span></b></p></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table36" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="92%" colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="2.4._Příklady_jednodušších_periodických_signálů_a_jejich_spekter">2.4. 
+		Příklady jednodušších periodických signálů a jejich spekter</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">V 
+		těchto několika obrázcích vám předkládáme příklady k procvičení si 
+		vztahu časový průběh - spektrum.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		Nejjednodušší je začít na signálech na bázi harmonických průběhů. 
+		Všímejte si zejména velikostí</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">
+		spektrálních čar amplitudového i fázového spektra a poloh těchto čar na 
+		kmitočtové ose.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<span style="font-family: Arial; font-weight: 700; font-size: 13pt">Tak 
+		si lze postupně vytvořit <span style="background-color: #FFFF00">cit pro 
+		spektrální analýzu</span>, založenou na Fourierově harmonické analýze.</span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr42.jpg" width="779" height="758"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr43.jpg" width="778" height="769"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr45.jpg" width="774" height="496"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr46.jpg" width="775" height="422"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table34" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="92%" colspan="2"><b>
+		<span style="font-size: 14.0pt; font-family: Comic Sans MS; color: maroon">
+		<a name="2.5._Další_příklady_periodických_časových_průběhů_a_jejich_spekter">2.5. 
+		Další příklady periodických časových průběhů a jejich spekter</a></span></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Níže uvádíme přehled 
+		některých periodických signálů, jejich Fourierův rozvoj a náčrt 
+		amplitudového</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">spektra. Omluvte, prosím, 
+		nižší čitelnost, danou již předlohou (průhledná fólie).</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<img border="0" src="Tema19_Obr/Obr47.jpg" width="800" height="1277"></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	</table>
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="0" width="883" id="table35" style="border-collapse: collapse">
+	<tr>
+		<td nowrap width="92%" colspan="2">
+		<span style="font-size: 16.0pt; font-family: Comic Sans MS; color: blue"><b>
+		<a name="3._Doporučená_literatura">3. 
+		Doporučená literatura</a></b></span></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Biolek, D. a kol. Úvod do 
+		elektrotechniky. Skriptum S-13. Vojenská akademie v Brně, 1997.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Biolek, D. a kol. 
+		Elektronické obvody I. Učebnice. Univerzita obrany, Brno 2006. ISBN 
+		80-7231-169-7.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">Zaplatílek, K. a Doňar, B. 
+		MATLAB - začínáme se signály. BEN-technická literatura, Praha 2006.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<b><font face="Arial" style="font-size: 13pt">ISBN 
+		80-7300-200-0.</font></b></td>
+	</tr>
+	<tr>
+		<td nowrap width="5%">&nbsp;</td>
+		<td nowrap width="87%">
+		<p align="right"><font color="#0000FF" face="Arial"><u><i><b>
+		<a target="_blank" href="http://www.ben.cz/">http://www.ben.cz</a></b></i></u></font></td>
+	</tr>
+	</table>
+
+</body>
+
+</html>
